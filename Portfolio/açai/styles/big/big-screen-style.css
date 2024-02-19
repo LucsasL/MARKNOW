@@ -9,4 +9,10 @@
 /* Main Settings */
 
 
+/* Intro Section */
+section#intro {
+  font-size: 10em;
+  letter-spacing: 1.01em;
+}
+
 /* Products Section */

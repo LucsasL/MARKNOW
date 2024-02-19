@@ -148,6 +148,15 @@ section#intro::after {
   pointer-events: none;
 }
 
+section#intro iframe {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* About Section */
 section#about {
   background: var(--bg2);
