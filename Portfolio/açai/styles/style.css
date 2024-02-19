@@ -56,13 +56,12 @@ li {
 a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 
   transition: color .5s ease;
 }
 
 a:hover {
-  color: var(--bg2);
+  color: var(--bg3);
 }
 
 /* Header Settings */
@@ -74,7 +73,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
@@ -103,6 +102,24 @@ main {
   align-items: center;
 }
 
+section {
+  padding: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+section > div.cont {
+  width: 80%;
+}
+
+.columnsSect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+
 /* Intro Section */
 section#intro {
   height: 100vh;
@@ -114,15 +131,29 @@ section#intro {
   align-items: center;
 }
 
+section#intro::after {
+  content: '';
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.152),
+    transparent
+  );
+
+  pointer-events: none;
+}
+
 /* About Section */
 section#about {
   background: var(--bg2);
 
-  width: 80%;
+  width: 100%;
   height: 100vh;
-
-  display: flex;
-  justify-content: space-around;
 }
 
 /* Products Section */
@@ -132,13 +163,17 @@ section#products {
 }
 
 div.prodGrid {
+  margin: 30px;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 div.prodGrid > div {
+  padding: 20px;
   border: 3px solid black;
+  border-radius: 20px;
 }
 
 /* Footer Settings */
