@@ -15,9 +15,7 @@
 }
 
 :root {
-  --bg: '';
-  --bg2: '';
-  --bg3: '';
+  --bg: gray;
 }
 
 html, body {
@@ -38,6 +36,20 @@ div#ui {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* CSS Models */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columnsSect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
 }
 
 /* Text Settings */
@@ -97,7 +109,7 @@ header li {
 
 /* Main Settings */
 main {
-  background: var(--bg);
+  background: blue;
 
   width: 100%;
 
