@@ -40,20 +40,6 @@ div#ui {
   display: none;
 }
 
-/* CSS Models */
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.columnsSect {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 30px;
-}
-
 /* Text Settings */
 h1 {
   font-size: 2em;
@@ -82,12 +68,14 @@ a:hover {
   color: var(--bg2);
 }
 
-/* Media Settings */
-
 /* Header Settings */
 header {
   width: 100%;
   height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   position: sticky;
   top: 0;
@@ -112,6 +100,10 @@ main {
   background: var(--bg);
 
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Intro Section */
