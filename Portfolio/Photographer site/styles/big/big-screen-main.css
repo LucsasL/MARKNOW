@@ -29,12 +29,11 @@ main > div {
 
 /* Intro Section */
 section#intro {
-  margin-top: 150px;
+  margin-top: 100px;
 
   display: flex;
   align-items: center;
 }
-
 /* Sections */
 
 
