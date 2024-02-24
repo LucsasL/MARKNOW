@@ -199,12 +199,20 @@ section#about {
 }
 
 /* Feelings Section */
+section#feelings {
+  position: relative;
+}
+
 div.projTypes {
+  padding: 50px;
   margin: 20px;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 350px);
   gap: 30px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 div.projTypes > div {
@@ -214,6 +222,53 @@ div.projTypes > div {
   box-shadow: 0px 0px 15px var(--shadow);
 }
 
+div.projTypes::before {
+  background: white;
+  box-shadow: 0px 0px 15px var(--shadow);
+  
+  content: '<';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  font-size: 3em;
+
+  position: absolute;
+  top: 50%;
+  left: -1%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+div.projTypes::after {
+  background: white;
+  box-shadow: 0px 0px 15px var(--shadow);
+  
+  content: '>';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  font-size: 3em;
+
+  position: absolute;
+  top: 50%;
+  left: 96%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+div.projTypes img {
+  height: 90%;
+}
 
 /* Projects Section */
 section#works > div.cont {
