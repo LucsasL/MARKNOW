@@ -183,7 +183,10 @@ div.bg {
   background: white;
   width: auto;
   padding: 20px 20px 75px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.481);
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.481);
+
+  transform: rotate(15deg);
+  z-index: -1;
 }
 
 #introImg figcaption {
@@ -191,6 +194,8 @@ div.bg {
   margin-left: 20px;
   position: absolute;
   top: 89%;
+
+  transform: rotate(15deg);
 }
 
 /* About Section */
