@@ -7,6 +7,12 @@
   --bg3: '';
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header Settings */
 
 
@@ -17,8 +23,14 @@ main {
   width: 100%;
 }
 
+main > div {
+  width: 80%;
+}
+
 /* Intro Section */
 section#intro {
+  margin-top: 150px;
+
   display: flex;
   align-items: center;
 }
