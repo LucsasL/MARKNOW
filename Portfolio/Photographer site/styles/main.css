@@ -162,6 +162,8 @@ main {
 
 /* Intro Section */
 section#intro {
+  color: white;
+
   display: flex;
   align-items: center;
 
@@ -201,6 +203,57 @@ div.bg {
 /* About Section */
 section#about {
   padding: 100px 0px;
+  flex: auto;
+}
+
+.aboutImgCont {
+  display: flex;
+  position: relative;
+}
+
+.aboutImg {
+  background: rgba(0, 0, 0, 0.14);
+
+  width: 230px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+
+  transition: all .5s ease-in;
+}
+
+.aboutImg:nth-child(1) {
+  position: absolute;
+  left: 50%;
+}
+
+.aboutImg:hover ~ .aboutImg:nth-child(1) {
+  position: absolute;
+  left: 30%;
+  transform: rotate(-35deg);
+}
+
+.aboutImg:nth-child(2) {
+  position: absolute;
+  left: 50%;
+}
+
+.aboutImg:hover ~ .aboutImg:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  /* transform: rotate(5deg); */
+}
+
+.aboutImg:nth-child(3) {
+  position: absolute;
+  left: 50%;
+}
+
+.aboutImg:hover ~ .aboutImg:nth-child(3) {
+  position: absolute;
+  left: 60%;
+  transform: rotate(35deg);
 }
 
 /* Feelings Section */
