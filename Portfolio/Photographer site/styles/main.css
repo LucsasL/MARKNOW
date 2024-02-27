@@ -212,8 +212,10 @@ div.projTypes {
   padding: 50px;
   margin: 20px;
 
+  box-shadow: inset 0px 0px 15px var(--shadow);
+
   display: grid;
-  grid-template-columns: repeat(5, 350px);
+  grid-template-columns: repeat(5, 400px);
   gap: 30px;
 
   overflow-x: auto;
@@ -272,7 +274,7 @@ div.projTypes::after {
 }
 
 div.projTypes img {
-  height: 90%;
+  /* height: 90%; */
 }
 
 /* Projects Section */
