@@ -5,7 +5,7 @@ document.addEventListener("scroll", () => {
 
   } else {
     header.classList.remove("scrolled");
-    headerImg.src = "../img/logo-white.png";
+    headerImg.src = "img/logo-white.png";
 
   }
 })
