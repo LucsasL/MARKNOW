@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* General Settings */
+
+/* CSS Models */
+.two-columns {
+  display: flex;
+  flex: auto;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
