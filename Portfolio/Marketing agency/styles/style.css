@@ -15,11 +15,14 @@
 
 /* Variables */
 :root {
-  --bg: black;
+  --bg: #EBBAB9;
+  --bg2: #071108;
 
   --prim: #EF6F6C;
-  --sec: #93FFD8;
+  --sec: #5AD2F4;
   --third: #7FB685;
+
+  --fourth: #F9C976;
 }
 
 /* CSS UI Lib */
