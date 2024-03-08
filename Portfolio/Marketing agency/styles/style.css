@@ -105,21 +105,18 @@ button a {
 #ui {
   background: var(--bg);
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
-  display: grid;
-  grid-area: 
-"header header
-   main main
-   footer footer";
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /* Header */
 header {
   background: var(--sec);
 
-  height: 90px;
+  padding: 20px 70px;
   border-bottom: 2px solid black;
 }
 
@@ -134,14 +131,24 @@ header > div {
 /* Main */
 main {
   width: 80%;
+  align-self: center;
 }
 
-section {
-  width: 90%;
+main > div {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+main section {
+  grid-column: 1 / span 12;
 }
 
 /* Intro Section */
-
+section#intro div.cont {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
 
 /* About Se */
 section#about > div {
