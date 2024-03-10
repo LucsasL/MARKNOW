@@ -48,7 +48,7 @@
 }
 
 .prim-button:hover {
-  box-shadow: 0px 3px black;
+  box-shadow: 0px 0px black;
 }
 
 .sec-button {
@@ -110,6 +110,8 @@ button a {
 
   display: flex;
   flex-flow: column nowrap;
+
+  position: relative;
 }
 
 /* Header */
@@ -129,18 +131,15 @@ header > div {
 }
 
 /* Main */
-main {
-  width: 80%;
-  align-self: center;
-}
-
 main > div {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
 main section {
-  grid-column: 1 / span 12;
+  height: 900px;
+  grid-column: 2 / span 9;
+  display: flex;
 }
 
 /* Intro Section */
@@ -156,10 +155,18 @@ section#about > div {
   height: 500px;
 }
 
+/* Pals section */
+section#pals {
+  background: var(--bg2);
+  color: var(--bg);
+
+  grid-column: 1 / span 12;
+}
+
 /* Footer */
 footer {
   background: var(--bg2);
-  color: white;
+  color: var(--bg);
 
   width: 100%;
   height: 400px;
@@ -170,4 +177,20 @@ footer {
   bottom: 0; */
 }
 
+footer a {
+  color: var(--bg);
+}
 
+footer li {
+  display: block;
+}
+
+#credits {
+  width: 100%;
+  padding: 30px 100px;
+  border-top: 2px solid var(--bg);
+
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+}
