@@ -98,6 +98,12 @@ button a {
   font-size: 1.6em;
 }
 
+.giant {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 /* Block Settings */
 
 
@@ -149,10 +155,58 @@ section#intro div.cont {
   align-items: center;
 }
 
-/* About Se */
+/* About Section */
+section#about {
+  height: auto;
+  margin: 100px 0px;
+
+  grid-column: 1 / span 12;
+
+  position: relative;
+}
+
+section#about span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+section#about span:nth-child(2) {
+  text-align: right;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
 section#about > div {
   width: 700px;
   height: 500px;
+}
+
+section#about::before {
+  content: '';
+  background: white;
+  width: 300px;
+  height: 175px;
+  border: 2px solid black;
+  box-shadow: 10px 10px black;
+
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+
+section#about::after {
+  content: '';
+  background: white;
+  width: 300px;
+  height: 175px;
+  border: 2px solid black;
+  box-shadow: 10px 10px black;
+
+  position: absolute;
+  top: 75%;
+  left: 75%;
 }
 
 /* Pals section */
