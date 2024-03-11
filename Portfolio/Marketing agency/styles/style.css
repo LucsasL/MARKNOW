@@ -145,7 +145,6 @@ main > div {
 main section {
   height: 900px;
   grid-column: 2 / span 9;
-  display: flex;
 }
 
 /* Intro Section */
@@ -215,6 +214,44 @@ section#pals {
   color: var(--bg);
 
   grid-column: 1 / span 12;
+}
+
+/* Contact Style Sheets */
+section#form {
+  grid-column: 2 / span 10;
+}
+
+section#form > div {
+  background: white;
+
+  border: 5px solid black;
+  border-radius: 20px;
+  box-shadow: -10px 10px black;
+
+  grid-column: 2 / span 9;
+}
+
+fieldset {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  border: none;
+}
+
+legend {
+  display: none ;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0px;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+textarea {
+  border-radius: 20px;
 }
 
 /* Footer */
