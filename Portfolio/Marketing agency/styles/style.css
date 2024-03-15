@@ -274,10 +274,6 @@ footer a {
   color: var(--bg);
 }
 
-footer ul {
-  height: 90px;
-}
-
 footer li {
   display: block;
 }
@@ -289,8 +285,8 @@ footer .cont {
   justify-content: space-between;
 }
 
-footer .two-columns {
-  height: auto;
+footer .cont h1 {
+  height: 150px;
 }
 
 #credits {
