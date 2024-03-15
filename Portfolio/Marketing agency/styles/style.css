@@ -135,9 +135,6 @@ button a {
 }
 
 /* Block Settings */
-.sect-transit {
-  position: absolute;
-}
 
 /* UI */
 #ui {
@@ -158,6 +155,8 @@ header {
 
   padding: 20px 70px;
   border-bottom: 2px solid black;
+
+  text-transform: uppercase;
 }
 
 header > div {
@@ -181,6 +180,10 @@ main section {
 
   display: flex;
   align-items: center;
+}
+
+.cont {
+  z-index: 1;
 }
 
 /* Intro Section */
@@ -268,7 +271,7 @@ section#feats {
   background: var(--sec);
 
   width: 100%;
-  height: 800px;
+  height: 1000px;
 
   display: grid;
   grid-column: 1 / span 12;
@@ -276,24 +279,28 @@ section#feats {
   position: relative;
 }
 
-section#feast .sect-transit:nth-child(1) {
+.sect-transit img:nth-child(1) {
   position: absolute;
-  top: -150%;
+  width: 100%;
+  height: 380px;
+  top: -19%;
   left: 0;
 }
 
-/* section#feast .sect-transit img:nth-child(2) {
+.sect-transit img:nth-child(2) {
   position: absolute;
-  top: 155%;
+  width: 100%;
+  height: 550px;
+  top: 72.5%;
   left: 0;
-} */
+}
 
 section#feats .cont {
-  height: 90%;
+  height: 60%;
   grid-column: 2 / span 9;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   gap: 30px;
 }
 
@@ -302,22 +309,25 @@ section#feats .cont > div {
 }
 
 section#feats .cont > div:nth-child(1) {
-  grid-column: 2 / span 3;
-  grid-row: 1 / span 2;
+  grid-area: 1 / 1 / span 9 / span 2;
 }
 
 section#feats .cont > div:nth-child(2) {
   background: var(--third);
-  grid-column: 5 / span 6;
+  grid-area: 1 / 3 / span 4 / span 6;
 }
 
 section#feats .cont > div:nth-child(3) {
   background: var(--third);
-  grid-column: 5 / span 3;
+  grid-area: 5 / 3 / span 5 / span 2;
 }
 
 section#feats .cont > div:nth-child(4) {
-  grid-column: 8 / span 3;
+  grid-area: 5 / 5 / span 5 / span 2;
+}
+
+section#feats .cont > div:nth-child(5) {
+  grid-area: 5 / 7 / span 5 / span 2;
 }
 
 /* Contact Style Sheets */
