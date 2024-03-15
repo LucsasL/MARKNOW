@@ -143,6 +143,7 @@ main > div {
 }
 
 main section {
+  width: 100%;
   height: 900px;
   grid-column: 2 / span 9;
 }
@@ -259,21 +260,37 @@ footer {
   background: var(--bg2);
   color: var(--bg);
 
-  width: 100%;
-  height: 400px;
+  height: 500px;
   text-align: center;
 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
   margin-top: auto;
-  /* position: absolute;
-  bottom: 0; */
 }
 
 footer a {
   color: var(--bg);
 }
 
+footer ul {
+  height: 90px;
+}
+
 footer li {
   display: block;
+}
+
+footer .cont {
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+footer .two-columns {
+  height: auto;
 }
 
 #credits {
