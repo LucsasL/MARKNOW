@@ -100,6 +100,7 @@ html, body {
 
 p {
   font-size: 1.2em;
+  line-height: 1.5em;
   margin: 1em 0px;
 }
 
@@ -411,6 +412,32 @@ section#feats .cont > div:nth-child(3) {
 
 section#feats .cont > div:nth-child(4) {
   grid-area: 5 / 6 / span 5 / span 3;
+}
+
+/* About Page */
+section#top {
+  background: var(--bg2);
+  color: var(--bg);
+
+  height: 500px;
+
+  grid-column: 1 / span 12;
+}
+
+section#top .cont {
+  height: 100%;
+  padding: 50px;
+}
+
+.cont > div {
+  height: 100%;
+}
+
+.img-prof {
+  width: 100%;
+  height: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 
 /* Contact Style Sheets */
