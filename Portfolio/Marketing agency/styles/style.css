@@ -56,8 +56,12 @@ html, body {
 
 .two-columns .img-div {
   width: 60%;
-  border: 5px solid black;
-  border-radius: 10px;
+  height: 100%;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
 }
 
 .prim-button {
@@ -152,6 +156,13 @@ button a {
 
 /* Block Settings */
 
+
+/* Media Settings */
+iframe { 
+  width: 100%;
+  height: 100%;
+}
+
 /* UI */
 #ui {
   background: var(--bg);
@@ -203,10 +214,12 @@ main section {
 
 /* Intro Section */
 section#intro {
-  height: 500px;
+  height: 600px;
 }
 
 section#intro div.cont {
+  height: 100%;
+
   display: flex;
   align-items: center;
 }
@@ -346,11 +359,35 @@ section#reach .cont {
   height: 400px;
   border: 5px solid var(--bg2);
   border-radius: 50%;
+
+  position: relative;
 }
 
-.ball::before {
-  content: 'LOREM IPSULUM DOLOR';
-  font: bolder 3em var(--regular);
+.ball .txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  animation: rot-txt 10s linear infinite;
+}
+
+.txt span {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform-origin: 0 250px;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+@keyframes rot-txt {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Feats Section */
@@ -427,10 +464,6 @@ section#top {
 section#top .cont {
   height: 100%;
   padding: 50px;
-}
-
-.cont > div {
-  /* height: 100%; */
 }
 
 .img-prof {
