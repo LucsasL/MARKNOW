@@ -430,7 +430,7 @@ section#top .cont {
 }
 
 .cont > div {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .img-prof {
