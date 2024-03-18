@@ -135,6 +135,10 @@ button a {
   text-align: center;
 }
 
+.little {
+  font-size: .7em;
+}
+
 .big {
   font-size: 1.6em;
 }
@@ -242,7 +246,7 @@ section#about span:nth-child(1) {
 section#about span:nth-child(2) {
   text-align: right;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
 }
 
@@ -292,23 +296,47 @@ section#numbers h1, h2 {
 /* Pals section */
 section#pals {
   background: var(--bg2);
-  color: var(--bg);
+  color: var(--prim);
 
-  height: 500px;
+  height: 600px;
   padding: 50px;
 
   grid-column: 1 / span 12;
 
   display: block;
+  position: relative;
+}
+
+.testim {
+  width: 80%;
+  margin: auto;
+}
+
+.testim p {
+  color: white;
+  font-size: 1.35em;
+  line-height: 2.2em;
+  margin: 40px 20px;
+}
+
+.testim span.bolder {
+  font-size: 1.2em;
 }
 
 .client-grid {
+  background: var(--prim);
+  color: black;
+
   padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 7px 0px 5px black;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+
+  /* position: absolute;
+  top: 80%; */
 }
 
 /* Job Section */
