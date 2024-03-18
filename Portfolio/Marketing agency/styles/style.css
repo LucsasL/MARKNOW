@@ -310,6 +310,9 @@ section#pals {
 .testim {
   width: 80%;
   margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
 }
 
 .testim p {
@@ -349,20 +352,26 @@ section#job {
   grid-column: 2 / span 10;
 }
 
-section#job .two-columns {
-  flex: auto;
-  
-}
-
 section#job .block3d {
-  width: 400px;
   height: 550px;
   padding: 20px;
-  margin: 20px 0px;
+  margin: 70px 0px;
 
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+}
+
+section#job .prim-button {
+  border-radius: 50px;
+}
+
+section#job .block3d:nth-child(2) .prim-button {
+  background: var(--sec);
+}
+
+section#job .block3d:nth-child(3) .prim-button {
+  background: var(--third);
 }
 
 /* Reach Section */
@@ -475,17 +484,33 @@ section#feats .cont > div:nth-child(1) {
 }
 
 section#feats .cont > div:nth-child(2) {
-  background: var(--third);
+  background: var(--bg);
+
+  padding: 20px 50px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
   grid-area: 1 / 2 / span 1 / span 2;
 }
 
 section#feats .cont > div:nth-child(3) {
   background: var(--third);
+
+  padding: 20px;
+
   grid-area: 2 / 2 / span 1 / span 1;
 }
 
 section#feats .cont > div:nth-child(4) {
   grid-area: 2 / 3 / span 1 / span 1;
+
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 20px;
 }
 
 /* About Page */
