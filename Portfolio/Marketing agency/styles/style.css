@@ -68,7 +68,10 @@ html, body {
   background: var(--prim);
   border: 3px solid black;
   border-radius: 10px;
-  box-shadow: 0px 7px 0px black;
+  box-shadow: 0px 1px 0px black,
+              0px 2px 0px black,
+              0px 3px 0px black,
+              0px 7px 0px black;
   transition: box-shadow .5s ease;
 }
 
@@ -85,6 +88,7 @@ html, body {
   background: white;
   border: 2px solid var(--bg2);
   box-shadow: 10px 10px 0px black;
+  z-index: 0;
 }
 
 .bar-window {
@@ -237,17 +241,29 @@ section#about {
   position: relative;
 }
 
-section#about span:nth-child(1) {
+section#about span:nth-child(odd) {
   position: absolute;
   top: 0;
-  left: 5%;
+  left: 2%;
 }
 
-section#about span:nth-child(2) {
+section#about span:nth-child(3) {
+  z-index: 1;
+  color: transparent;
+  -webkit-text-stroke: 3px black;
+}
+
+section#about span:nth-child(even) {
   text-align: right;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
+}
+
+section#about span:nth-child(4) {
+  z-index: 1;
+  color: transparent;
+  -webkit-text-stroke: 3px black;
 }
 
 section#about > div {
@@ -264,7 +280,7 @@ section#about > #small1 {
 
   position: absolute;
   top: -10%;
-  left: 5%;
+  left: -2%;
 }
 
 #small1 .bar-window {
@@ -280,7 +296,7 @@ section#about > #small2 {
 
   position: absolute;
   top: 75%;
-  left: 75%;
+  left: 85%;
 }
 
 #small2 .bar-window {
@@ -311,6 +327,10 @@ section#pals {
 
   display: block;
   position: relative;
+}
+
+.testimMsg {
+  position: absolute;
 }
 
 .nav-button {
@@ -397,6 +417,18 @@ section#job .block3d:nth-child(2) .prim-button {
 
 section#job .block3d:nth-child(3) .prim-button {
   background: var(--third);
+}
+
+/* Services Iframe */
+iframe.servTour {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 /* Reach Section */
