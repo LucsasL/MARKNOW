@@ -90,7 +90,7 @@ html, body {
 .bar-window {
   background: var(--sec);
 
-  height: 50px;
+  height: 10%;
   border-bottom: 2px solid var(--bg2);
 }
 
@@ -255,8 +255,7 @@ section#about > div {
   height: 500px;
 }
 
-section#about::before {
-  content: '';
+section#about > #small1 {
   background: white;
   width: 300px;
   height: 175px;
@@ -264,12 +263,15 @@ section#about::before {
   box-shadow: 10px 10px black;
 
   position: absolute;
-  top: 5%;
+  top: -10%;
   left: 5%;
 }
 
-section#about::after {
-  content: '';
+#small1 .bar-window {
+  background: var(--fourth);
+}
+
+section#about > #small2 {
   background: white;
   width: 300px;
   height: 175px;
@@ -279,6 +281,10 @@ section#about::after {
   position: absolute;
   top: 75%;
   left: 75%;
+}
+
+#small2 .bar-window {
+  background: var(--third);
 }
 
 /* Numbers Section */
@@ -307,8 +313,27 @@ section#pals {
   position: relative;
 }
 
+.nav-button {
+  position: relative;
+}
+
+.nav-button .arrow {
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+#arrowBack:hover {
+  position: absolute;
+  left: -10%;
+}
+
+#arrowForw:hover {
+  position: absolute;
+  left: 90%;
+}
+
 .testim {
-  width: 80%;
+  width: 90%;
   margin: auto;
 
   display: grid;
