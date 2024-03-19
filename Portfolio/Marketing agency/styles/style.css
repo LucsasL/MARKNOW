@@ -329,8 +329,16 @@ section#pals {
   position: relative;
 }
 
-.testimMsg {
-  position: absolute;
+.testimMsgLeft {
+  position: relative;
+  left: -100%;
+  transition: all .5s ease-in-out;
+}
+
+.testimMsgRight {
+  position: relative;
+  left: 100%;
+  transition: all .5s ease-in-out;
 }
 
 .nav-button {
