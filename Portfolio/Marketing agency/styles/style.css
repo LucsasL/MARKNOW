@@ -20,6 +20,8 @@
 html, body {
   max-width: 100%;
   overflow-x: clip;
+
+  scroll-behavior: smooth;
 }
 
 /* Variables */
@@ -273,14 +275,14 @@ section#about > div {
 
 section#about > #small1 {
   background: white;
-  width: 300px;
-  height: 175px;
+  width: 400px;
+  height: 275px;
   border: 2px solid black;
   box-shadow: 10px 10px black;
 
   position: absolute;
-  top: -10%;
-  left: -2%;
+  top: 55%;
+  left: 2%;
 }
 
 #small1 .bar-window {
@@ -289,14 +291,14 @@ section#about > #small1 {
 
 section#about > #small2 {
   background: white;
-  width: 300px;
-  height: 175px;
+  width: 400px;
+  height: 275px;
   border: 2px solid black;
   box-shadow: 10px 10px black;
 
   position: absolute;
-  top: 75%;
-  left: 85%;
+  top: -10%;
+  left: 70%;
 }
 
 #small2 .bar-window {
