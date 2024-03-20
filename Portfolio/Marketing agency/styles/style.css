@@ -167,6 +167,10 @@ button a {
 
 
 /* Media Settings */
+picture, img {
+  height: 100%;
+}
+
 iframe { 
   width: 100%;
   height: 100%;
@@ -395,6 +399,7 @@ section#pals {
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   gap: 30px;
 
   /* position: absolute;
