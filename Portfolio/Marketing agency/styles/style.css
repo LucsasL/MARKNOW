@@ -17,6 +17,10 @@
   font-weight: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html, body {
   max-width: 100%;
   overflow-x: clip;
@@ -46,6 +50,7 @@ html, body {
 }
 
 .two-columns {
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -53,17 +58,18 @@ html, body {
 }
 
 .two-columns > div.txt-cont {
-  width: 60%;
+  width: 100%;
 }
 
 .two-columns .img-div {
-  width: 60%;
-  height: 100%;
+  width: 100%;
 }
 
 .space-around {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
+  gap: 0px 70px;
 }
 
 .prim-button {
@@ -218,6 +224,10 @@ header > div {
   align-items: center;
 }
 
+.mainHeader {
+  display: none;
+}
+
 /* Main */
 main > div {
   display: grid;
@@ -226,7 +236,7 @@ main > div {
 
 main section {
   width: 100%;
-  grid-column: 2 / span 10;
+  grid-column: 2 / span 9;
 
   display: flex;
   align-items: center;
@@ -242,8 +252,6 @@ section#intro {
 }
 
 section#intro div.cont {
-  height: 100%;
-
   display: flex;
   align-items: center;
 }
@@ -297,7 +305,7 @@ section#about > #small1 {
 
   position: absolute;
   top: 55%;
-  left: 2%;
+  left: -50%;
 }
 
 #small1 .bar-window {
@@ -312,8 +320,8 @@ section#about > #small2 {
   box-shadow: 10px 10px black;
 
   position: absolute;
-  top: -10%;
-  left: 70%;
+  top: -30%;
+  left: 80%;
 }
 
 #small2 .bar-window {
@@ -331,7 +339,7 @@ section#about > #small2 {
 
 /* Numbers Section */
 section#numbers {
-  height: 500px;
+  height: auto;
 
   display: block;
   text-align: center;
@@ -346,7 +354,7 @@ section#pals {
   background: var(--bg2);
   color: var(--prim);
 
-  height: 600px;
+  height: auto;
   padding: 50px;
 
   grid-column: 1 / span 12;
@@ -376,6 +384,10 @@ section#pals {
   transition: all .5s ease;
 }
 
+.arrow {
+  display: none;
+}
+
 #arrowBack:hover {
   position: absolute;
   left: -10%;
@@ -391,14 +403,14 @@ section#pals {
   margin: auto;
 
   display: grid;
-  grid-template-columns: 1fr 70% 1fr;
+  grid-template-columns: 1f;
 }
 
 .testim p {
   color: white;
   font-size: 1.35em;
   line-height: 2.2em;
-  margin: 40px 20px;
+  margin: 40px 0px;
 }
 
 .testim span.bolder {
@@ -430,6 +442,10 @@ section#job {
   text-align: left;
 
   grid-column: 2 / span 10;
+}
+
+section#job .two-columns {
+  gap: 0px 30px;
 }
 
 section#job .block3d {
@@ -469,6 +485,9 @@ iframe.servTour {
 /* Reach Section */
 section#reach {
   height: 1000px;
+/* 
+  display: flex;
+  flex-flow: column-reverse; */
 }
 
 section#reach .cont {
@@ -558,12 +577,11 @@ section#feats {
 
 section#feats .cont {
   width: 90%;
-  height: 750px;
+  height: auto;
 
   grid-column: 2 / span 9;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -572,7 +590,9 @@ section#feats .cont > div {
 }
 
 section#feats .cont > div:nth-child(1) {
-  grid-area: 1 / 1 / span 2 / span 1;
+  grid-column: 1 / span 2;
+  padding: 20px;
+  text-align: center;
 }
 
 section#feats .cont > div:nth-child(2) {
@@ -583,7 +603,7 @@ section#feats .cont > div:nth-child(2) {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
-  grid-area: 1 / 2 / span 1 / span 2;
+  grid-column: 1 / span 2;
 }
 
 section#feats .cont > div:nth-child(3) {
@@ -591,11 +611,11 @@ section#feats .cont > div:nth-child(3) {
 
   padding: 20px;
 
-  grid-area: 2 / 2 / span 1 / span 1;
+  grid-column: 1 / span 2;
 }
 
 section#feats .cont > div:nth-child(4) {
-  grid-area: 2 / 3 / span 1 / span 1;
+  grid-column: 1 / span 2;
 
   padding: 30px;
 
@@ -680,7 +700,7 @@ footer {
   background: var(--bg2);
   color: var(--bg);
 
-  height: 700px;
+  height: auto;
   text-align: center;
 
   display: flex;
@@ -703,8 +723,9 @@ footer li {
 
 footer .cont {
   width: 70%;
+  height: auto;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
