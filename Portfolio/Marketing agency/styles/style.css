@@ -313,6 +313,15 @@ section#about > #small2 {
   background: var(--third);
 }
 
+.window picture {
+  height: 90%;
+}
+
+.window img {
+  height: 70%;
+  border-radius: 10px;
+}
+
 /* Numbers Section */
 section#numbers {
   height: 500px;
