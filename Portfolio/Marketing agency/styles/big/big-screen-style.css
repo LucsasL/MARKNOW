@@ -151,6 +151,10 @@ section#feats .cont > div:nth-child(1) {
   align-items: center;
 }
 
+section#feats .cont > div:nth-child(1) h1 {
+  transform: rotate(-90deg);
+}
+
 section#feats .cont > div:nth-child(2) {
   background: var(--bg);
 
@@ -189,4 +193,8 @@ footer .cont {
 
 footer .cont > div {
   height: 100%;
+}
+
+footer .cont > div:nth-child(1) {
+  width: auto;
 }
