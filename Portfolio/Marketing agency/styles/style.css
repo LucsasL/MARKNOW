@@ -735,6 +735,7 @@ input, textarea {
 }
 
 input[type=submit] {
+  width: auto;
   cursor: pointer;
 }
 
@@ -747,44 +748,60 @@ footer {
   background: var(--bg2);
   color: var(--bg);
 
-  height: auto;
-  text-align: center;
+  margin-top: auto;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-
-  margin-top: auto;
+  align-items: center;
 }
 
 footer a {
   color: var(--bg);
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 footer li {
   display: block;
-  font-size: 1.6em;
-  margin: 20px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+footer input[type=text] {
+  width: 83%;
+  padding: 10px;
+  margin-right: 5px;
+  box-shadow: 0px 7px black;
 }
 
 footer .cont {
-  width: 70%;
-  height: auto;
+  width: 80%;
+  /* height: 350px; */
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+footer .cont > div {
+  height: 100%;
+  align-content: center;
+  flex: auto;
 }
 
 footer .cont h1 {
   height: 90px;
-  padding: 50px;
+  margin: 20px 0px;
+}
+
+footer .cont h2 {
+  margin: 5px 0px;
+  font-weight: bold;
 }
 
 #credits {
   width: 80%;
 
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin-top: auto;
 }

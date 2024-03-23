@@ -182,11 +182,11 @@ section#feats .cont > div:nth-child(4) {
 }
 
 /* Footer settings */
-footer {
-  height: 700px;
+footer .cont {
+  height: 350px;
+  gap: 180px;
 }
 
-footer .cont {
-  flex-flow: column nowrap;
-  height: 500px;
+footer .cont > div {
+  height: 100%;
 }
