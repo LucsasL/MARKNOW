@@ -682,15 +682,6 @@ section#feats .cont > div:nth-child(4) {
 }
 
 /* About Page */
-section#top {
-  background: var(--bg2);
-  color: var(--bg);
-
-  height: 500px;
-
-  grid-column: 1 / span 12;
-}
-
 section#cases .cont {
   display: flex;
   flex-flow: column nowrap;
@@ -701,7 +692,7 @@ section#cases .two-columns {
 }
 
 section#cases .window {
-  width: 700px;
+  width: 600px;
   height: 400px;
 }
 
@@ -710,11 +701,62 @@ section#top .cont {
   padding: 50px;
 }
 
+section#cases h2 {
+  margin: 10px 0px;
+}
+
+section#top {
+  background: var(--bg2);
+  color: var(--bg);
+
+  height: 700px;
+
+  grid-column: 1 / span 12;
+}
+
+section#top .two-columns {
+  height: 100%;
+}
+
 .img-prof {
+  background: url('../img/big-professional-round.jpg') center no-repeat;
+  background-size: cover;
+
   width: 100%;
   height: 100%;
   border: 5px solid red;
   border-radius: 50%;
+}
+
+section#top button {
+  width: 70px;
+  height: 70px;
+}
+
+section#top button:nth-child(1) {
+  background-color: var(--prim);
+  border: none;
+  border-radius: 50%;
+}
+
+section#top button:nth-child(2) {
+  background-color: var(--sec);
+  border: none;
+}
+
+section#top button:nth-child(3) {
+  height: 1px;
+  border: none;
+  border: 40px solid var(--bg2);
+  border-bottom: 60px solid var(--third);
+}
+
+section#top button:nth-child(4) {
+  width: 0px;
+  border-top: 30px solid var(--third);
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  /* border-bottom: 30px solid var(--fourth); */
 }
 
 /* Contact Style Sheets */
