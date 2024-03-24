@@ -199,6 +199,11 @@ figcaption {
   display: none;
 }
 
+abbr {
+  text-decoration: none;
+  font-weight: 900;
+}
+
 /* UI */
 #ui {
   background: var(--bg);
@@ -684,6 +689,20 @@ section#top {
   height: 500px;
 
   grid-column: 1 / span 12;
+}
+
+section#cases .cont {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+section#cases .two-columns {
+  margin: 30px;
+}
+
+section#cases .window {
+  width: 700px;
+  height: 400px;
 }
 
 section#top .cont {
