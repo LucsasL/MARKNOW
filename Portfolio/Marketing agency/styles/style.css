@@ -262,9 +262,13 @@ section#intro {
   height: 600px;
 }
 
-section#intro div.cont {
+section#intro .cont {
   display: flex;
   align-items: center;
+}
+
+section#intro .two-columns {
+  height: 100%;
 }
 
 /* About Section */
