@@ -544,7 +544,7 @@ iframe.servTour {
 
 /* Reach Section */
 section#reach {
-  height: 1000px;
+  height: 1400px;
   width: 100%;
 }
 
@@ -558,10 +558,11 @@ section#reach .cont {
 }
 
 .ceo {
-  width: 40%;
+  width: 100%;
   height: 60%;
   align-self: flex-start;
   position: relative;
+  order: 1;
 }
 
 .ceo iframe {
