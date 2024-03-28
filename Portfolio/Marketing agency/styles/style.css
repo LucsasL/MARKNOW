@@ -545,26 +545,43 @@ iframe.servTour {
 /* Reach Section */
 section#reach {
   height: 1000px;
-/* 
-  display: flex;
-  flex-flow: column-reverse; */
+  width: 100%;
 }
 
 section#reach .cont {
   height: 100%;
+  width: 100%;
 
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 .ceo {
+  width: 40%;
+  height: 60%;
+  align-self: flex-start;
+  position: relative;
+}
+
+.ceo iframe {
+  height: 100%;
+
+  position: absolute;
+  bottom: -2%;
+  z-index: 1;
+}
+
+.portal {
   background: #FEF1F1;
 
-  width: 50%;
+  width: 100%;
   height: 90px;
   border: 5px solid var(--bg2);
   border-radius: 35px;
 
+  position: absolute;
+  bottom: 0;
   transform: perspective(10px) rotateX(1deg);
 }
 
@@ -576,6 +593,7 @@ section#reach .cont {
   border: 5px solid var(--bg2);
   border-radius: 50%;
 
+  align-self: flex-start;
   position: relative;
 }
 
