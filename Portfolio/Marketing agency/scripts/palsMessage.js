@@ -1,4 +1,4 @@
-const msgCont = document.querySelector(".testimTxt p.center");
+const msgCont = document.querySelector(".testimTxt");
 const arrowBut = document.querySelectorAll(".arrow");
 const msgs = [0, 1, 2, 3];
 let msgShown = 0;

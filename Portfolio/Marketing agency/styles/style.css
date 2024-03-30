@@ -2,8 +2,8 @@
 
 /* Imports */
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
 }
 
 /* General Settings */
@@ -13,7 +13,7 @@
 
   box-sizing: border-box;
 
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
 }
 
@@ -21,7 +21,8 @@
   width: 0%;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: clip;
 
@@ -30,14 +31,14 @@ html, body {
 
 /* Variables */
 :root {
-  --bg: #EBBAB9;
+  --bg: #ebbab9;
   --bg2: #071108;
 
-  --prim: #EF6F6C;
-  --sec: #5AD2F4;
-  --third: #7FB685;
+  --prim: #ef6f6c;
+  --sec: #5ad2f4;
+  --third: #7fb685;
 
-  --fourth: #F9C976;
+  --fourth: #f9c976;
 
   --regular: inter, sans-serif;
 }
@@ -76,11 +77,9 @@ html, body {
   background: var(--prim);
   border: 3px solid black;
   border-radius: 10px;
-  box-shadow: 0px 1px 0px black,
-              0px 2px 0px black,
-              0px 3px 0px black,
-              0px 7px 0px black;
-  transition: box-shadow .5s ease;
+  box-shadow: 0px 1px 0px black, 0px 2px 0px black, 0px 3px 0px black,
+    0px 7px 0px black;
+  transition: box-shadow 0.5s ease;
 }
 
 .prim-button:hover {
@@ -109,7 +108,7 @@ html, body {
 .block3d {
   border: 5px solid var(--bg2);
   border-radius: 20px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Text Settings */
@@ -155,7 +154,7 @@ button a {
 }
 
 .little {
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .big {
@@ -182,7 +181,8 @@ button a {
 }
 
 /* Media Settings */
-picture, img {
+picture,
+img {
   height: 100%;
 
   display: flex;
@@ -190,7 +190,7 @@ picture, img {
   align-items: center;
 }
 
-iframe { 
+iframe {
   width: 100%;
   height: 100%;
 }
@@ -360,7 +360,8 @@ section#numbers {
   text-align: center;
 }
 
-section#numbers h1, h2 {
+section#numbers h1,
+h2 {
   margin: 50px 0px;
 }
 
@@ -380,14 +381,14 @@ section#pals {
 
 .testimMsgLeft {
   position: relative;
-  left: -100%;
-  transition: all .5s ease-in-out;
+  left: -113.99vw;
+  transition: all 0.5s ease-in-out;
 }
 
 .testimMsgRight {
   position: relative;
-  left: 100%;
-  transition: all .5s ease-in-out;
+  left: 113.99vw;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-button {
@@ -396,7 +397,7 @@ section#pals {
 
 .nav-button .arrow {
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .arrow {
@@ -419,6 +420,15 @@ section#pals {
 
   display: grid;
   grid-template-columns: 1f;
+}
+
+.testimTxt {
+  width: 400vw;
+  position: relative;
+}
+
+.testimTxt div {
+  width: 14.5%;
 }
 
 .testim p {
@@ -515,7 +525,7 @@ iframe.servTour {
 
 #site img {
   border: 5px solid black;
-  border-radius: 30px; 
+  border-radius: 30px;
   box-shadow: -15px 15px 0px black;
 }
 
@@ -574,7 +584,7 @@ section#reach .cont {
 }
 
 .portal {
-  background: #FEF1F1;
+  background: #fef1f1;
 
   width: 100%;
   height: 90px;
@@ -742,7 +752,7 @@ section#top .two-columns {
 }
 
 .img-prof {
-  background: url('../img/big-professional-round.jpg') center no-repeat;
+  background: url("../img/big-professional-round.jpg") center no-repeat;
   background-size: cover;
 
   width: 100%;
@@ -811,10 +821,11 @@ fieldset {
 }
 
 legend {
-  display: none ;
+  display: none;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 8px;
   margin: 15px 0px;
@@ -822,7 +833,7 @@ input, textarea {
   border-radius: 50px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: auto;
   cursor: pointer;
 }
@@ -855,14 +866,14 @@ footer li {
   margin-bottom: 20px;
 }
 
-footer input[type=text] {
+footer input[type="text"] {
   width: 83%;
   padding: 10px;
   margin-right: 5px;
   box-shadow: 0px 7px black;
 }
 
-footer input[type=submit] {
+footer input[type="submit"] {
   border-radius: 50%;
 }
 
