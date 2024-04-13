@@ -95,6 +95,8 @@ body {
   background: white;
   border: 2px solid var(--bg2);
   box-shadow: 10px 10px 0px black;
+
+  transform: scale(0);
   z-index: 0;
 }
 
