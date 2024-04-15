@@ -1,11 +1,3 @@
-const giantTextLeft1 = document.querySelector("#left1");
-const giantTextLeft2 = document.querySelector("#left2");
-
-const giantTextRight1 = document.querySelector("#right1");
-const giantTextRight2 = document.querySelector("#right1");
-
-const windows = document.querySelector(".window");
-
 // const observer = new IntersectionObserver((entries) => {
 //   entries.forEach((entry) => {
 //     console.log(entry);
@@ -18,10 +10,15 @@ const windows = document.querySelector(".window");
 //   });
 // });
 
+gsap.set(".window", {
+  default: {
+    duration: 3,
+    ease: "ease-in-out",
+  },
+});
+
 gsap.to(".window", {
   scale: 1,
-  duration: 4,
-  ease: "ease-in-out"
 })
 
 gsap.to("#left1", {

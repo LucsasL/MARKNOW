@@ -17,8 +17,8 @@
   font-weight: normal;
 }
 
-::-webkit-scrollbar {
-  width: 0%;
+::-webkit-scrollbar-track {
+  background: var(--bg);
 }
 
 html,
@@ -96,7 +96,7 @@ body {
   border: 2px solid var(--bg2);
   box-shadow: 10px 10px 0px black;
 
-  transform: scale(0);
+  transform: scale(.5);
   z-index: 0;
 }
 

@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 /* General Settings */
-::-webkit-scrollbar {
-  display: block;
-  width: auto;
-}
 
 /* CSS Models */
 .two-columns {
