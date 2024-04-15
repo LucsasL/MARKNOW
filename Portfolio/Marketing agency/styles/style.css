@@ -399,21 +399,10 @@ section#pals {
 
 .nav-button .arrow {
   cursor: pointer;
-  transition: all 0.5s ease;
 }
 
 .arrow {
   display: none;
-}
-
-#arrowBack:hover {
-  position: absolute;
-  left: -10%;
-}
-
-#arrowForw:hover {
-  position: absolute;
-  left: 90%;
 }
 
 .testim {

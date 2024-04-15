@@ -1,17 +1,25 @@
 const msgCont = document.querySelector(".testimTxt");
 const arrowBut = document.querySelectorAll(".arrow");
-const msgs = [0, 1, 2, 3];
-let msgShown = 0;
+const pals = document.querySelector(".client-grid");
+const title = document.querySelector("h2");
 
-arrowBut[0].addEventListener("click", () => {
-  msgCont.classList.add(".testimMsgRight");
+arrowBut[0].addEventListener("mousemove", () => {
+  gsap.set("#arrowBack", {
+    x: 0,
+  });
   
-})
-
-arrowBut[1].addEventListener("click", () => {
-  msgCont.classList.add(".testimMsgLeft");
+  gsap.to("#arrowBack", {
+    x: -20,
+  });
 });
 
-if (msgShown > 4) {
-  msgShown -= msgShown;
-}
+
+arrowBut[1].addEventListener("mousemove", () => {
+  gsap.set("#arrowForw", {
+    x: 0,
+  });
+
+  gsap.to("#arrowForw", {
+    x: 20
+  });
+});
