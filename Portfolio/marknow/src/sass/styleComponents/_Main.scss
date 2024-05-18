@@ -23,3 +23,30 @@ section#intro {
     border-radius: 10px;
   }
 }
+
+// About Section
+section#about {
+  text-align: center;
+
+  > div {
+    @include spaceAround;
+
+    h2 {
+      font-weight: normal;
+
+      span {
+        font: 900 4em sans-serif;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 40px 0px;
+  }
+}
+
+// Pals Section
+section#pals {
+  background: $dark;
+}

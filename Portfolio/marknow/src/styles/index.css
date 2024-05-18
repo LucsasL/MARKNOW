@@ -104,6 +104,31 @@ section#intro div.imgDiv {
   border-radius: 10px;
 }
 
+section#about {
+  text-align: center;
+}
+section#about > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+section#about > div h2 {
+  font-weight: normal;
+}
+section#about > div h2 span {
+  font: 900 4em sans-serif;
+}
+section#about h1 {
+  font-size: 3em;
+  margin: 40px 0px;
+}
+
+section#pals {
+  background: #071108;
+}
+
 footer {
   background: #071108;
   color: white;
