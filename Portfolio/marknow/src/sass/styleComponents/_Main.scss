@@ -1,0 +1,25 @@
+main {
+  width: 100%;
+
+  @include center;
+
+  section {
+    margin: 100px 0px;
+  }
+
+  > div {
+    width: 80%;
+  }
+}
+
+// Intro Section
+section#intro {
+  @include spaceAround;
+
+  div.imgDiv {
+    width: 100%;
+    height: 100%;
+    border: 5px solid $dark;
+    border-radius: 10px;
+  }
+}

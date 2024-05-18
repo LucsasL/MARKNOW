@@ -1,12 +1,43 @@
 // Layout Mixins
-@mixin spaceBetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin spaceBetween {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+@mixin spaceAround {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+// Buttons elements
+@mixin primaryButton {
+  background: $secondary;
+
+  margin: 10px;
+  border: 2px solid $dark;
+  border-radius: 10px;
+  outline: none;
+
+  font-weight: bold;
+  
+  @include center;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+  }
 }

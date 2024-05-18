@@ -4,8 +4,10 @@
 @import "./styleComponents/Resets";
 @import "./styleComponents/Variables";
 @import "./styleComponents/Mixins";
-@import "./styleComponents/mediaQueries";
+@import "./styleComponents/MediaQueries";
 
 
 // Main Imports
 @import "./styleComponents/Header";
+@import "./styleComponents/Main";
+@import "./styleComponents/Footer";
