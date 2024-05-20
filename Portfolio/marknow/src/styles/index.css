@@ -23,6 +23,7 @@ html, body {
 
 button.primary {
   background: #EF6F6C;
+  box-shadow: 0px 5px black;
   margin: 10px;
   border: 2px solid #071108;
   border-radius: 10px;
@@ -79,15 +80,17 @@ header h1 {
 
 main {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main section {
-  margin: 100px 0px;
 }
 main > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: none;
+}
+main section {
   width: 80%;
+  margin: 100px 0px;
 }
 
 section#intro {
@@ -116,9 +119,11 @@ section#about > div {
 }
 section#about > div h2 {
   font-weight: normal;
+  font-size: 2em;
+  margin: 0px;
 }
 section#about > div h2 span {
-  font: 900 4em sans-serif;
+  font: 900 3em sans-serif;
 }
 section#about h1 {
   font-size: 3em;
@@ -127,6 +132,83 @@ section#about h1 {
 
 section#pals {
   background: #071108;
+  color: white;
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+section#pals > div {
+  height: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+section#pals h1 {
+  font: 900 3em sans-serif;
+  color: #EF6F6C;
+}
+section#pals h2 {
+  color: #EF6F6C;
+  font: 900 2em sans-serif;
+}
+section#pals h2 span {
+  font: normal 0.6em sans-serif;
+}
+section#pals p {
+  width: 60%;
+}
+section#pals .palsComp {
+  background: #EF6F6C;
+  box-shadow: 0px 10px black;
+  width: 80%;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 20px;
+  position: absolute;
+  top: 90%;
+}
+
+section#services > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+section#services .services {
+  box-shadow: -10px 10px black;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+section#services .services button {
+  border-radius: 20px;
+  width: 90%;
+}
+section#services .services:nth-child(2) .primary {
+  background: #5AD2F4;
+}
+section#services .services:nth-child(3) .primary {
+  background: #7FB685;
+}
+section#services h1 {
+  font: 900 3em sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 footer {

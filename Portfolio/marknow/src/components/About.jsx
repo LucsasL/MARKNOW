@@ -30,7 +30,6 @@ const About = () => {
               FUNDS
             </h2>
           </div>
-
         </div>
       </section>
     </>
