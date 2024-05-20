@@ -147,16 +147,26 @@ section#services {
 section#reach {
   height: 900px;
 
+<<<<<<< Updated upstream
   @include spaceAround;
 
+=======
+>>>>>>> Stashed changes
   .ceo {
     background: white;
 
     width: 500px;
+<<<<<<< Updated upstream
     height: 150px;
     border: 5px solid black;
     border-radius: 20px;
     transform: perspective(10px) rotateX(1deg);
+=======
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 20px;
+    transform: ;
+>>>>>>> Stashed changes
   }
 
   .earth {
