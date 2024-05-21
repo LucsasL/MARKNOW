@@ -29,9 +29,13 @@ button.primary {
   border-radius: 10px;
   outline: none;
   font-weight: bold;
+  transition: box-shadow 0.5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+button.primary:hover {
+  box-shadow: 0px 0px transparent;
 }
 button.primary a {
   display: block;
@@ -107,6 +111,21 @@ section#intro div.imgDiv {
   border-radius: 10px;
 }
 
+section#showcase {
+  height: 700px;
+}
+section#showcase .window {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #071108;
+}
+section#showcase .window .bar {
+  height: 30px;
+  margin: 20px;
+  border-bottom: 1px solid #071108;
+}
+
 section#about {
   text-align: center;
 }
@@ -151,15 +170,15 @@ section#pals > div {
   align-items: center;
 }
 section#pals h1 {
-  font: 900 3em sans-serif;
+  font: 900 3em system-ui, sans-serif;
   color: #EF6F6C;
 }
 section#pals h2 {
   color: #EF6F6C;
-  font: 900 2em sans-serif;
+  font: 900 2em system-ui, sans-serif;
 }
 section#pals h2 span {
-  font: normal 0.6em sans-serif;
+  font: normal 0.6em system-ui, sans-serif;
 }
 section#pals p {
   width: 60%;
@@ -235,14 +254,94 @@ section#reach .earth {
   border-radius: 50%;
 }
 
+section#improve {
+  background: #5AD2F4;
+  width: 100%;
+  height: 800px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#improve h1,
+section#improve h2 {
+  font: 900 3em system-ui, sans-serif;
+  text-align: center;
+}
+section#improve > div {
+  width: 70%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+section#improve > div div {
+  box-shadow: -10px 10px #071108;
+  padding: 20px;
+  border: 4px solid #071108;
+  border-radius: 20px;
+  margin: 20px;
+}
+section#improve > div > div:nth-child(1) {
+  background: #F9C976;
+  grid-row: 1/span 2;
+}
+section#improve > div > div:nth-child(2) {
+  background: #EBBAB9;
+  grid-column: 2/span 3;
+}
+section#improve > div > div:nth-child(3) {
+  background: #7FB685;
+}
+section#improve > div > div:nth-child(4) {
+  background: #F9C976;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 footer {
   background: #071108;
   color: white;
   width: 100%;
-  height: 200px;
+  height: 500px;
+  padding: 30px;
   position: relative;
   bottom: 0;
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+footer > div div {
+  width: 300px;
+}
+footer .credit {
+  width: 90%;
+  border-top: 2px solid white;
+  font: bold 1em system-ui, sans-serif;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+footer ul li {
+  display: inline-block;
+}
+footer a {
+  color: white;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */

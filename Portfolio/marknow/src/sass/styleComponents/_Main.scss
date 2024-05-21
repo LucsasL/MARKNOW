@@ -25,6 +25,17 @@ section#intro {
   }
 }
 
+// Showcase Settings
+section#showcase {
+  height: 700px;
+
+  .window {
+    width: 100px;
+    height: 100px;
+    @include window;
+  }
+}
+
 // About Section
 section#about {
   text-align: center;
@@ -166,5 +177,57 @@ section#reach {
     height: 400px;
     border: 10px solid black;
     border-radius: 50%;
+  }
+}
+
+// Improve Settings
+section#improve {
+  background: $third;
+  width: 100%;
+  height: 800px;
+  margin: 0px;
+
+  @include center;
+
+  h1,
+  h2 {
+    font: 900 3em $mainFont;
+    text-align: center;
+  }
+
+  > div {
+    width: 70%;
+    height: 80%;
+
+    @include grid(3, 2);
+
+    div {
+      box-shadow: -10px 10px $dark;
+
+      padding: 20px;
+      border: 4px solid $dark;
+      border-radius: 20px;
+      margin: 20px;
+    }
+
+    > div:nth-child(1) {
+      background: $fifth;
+      grid-row: 1 / span 2;
+    }
+
+    > div:nth-child(2) {
+      background: $primary;
+      grid-column: 2 / span 3;
+    }
+
+    > div:nth-child(3) {
+      background: $fourth;
+    }
+
+    > div:nth-child(4) {
+      background: $fifth;
+
+      @include grid(2, 2);
+    }
   }
 }

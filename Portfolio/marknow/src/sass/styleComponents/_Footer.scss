@@ -3,9 +3,45 @@ footer {
   color: white;
 
   width: 100%;
-  height: 200px;
+  height: 500px;
+  padding: 30px;
 
   position: relative;
   bottom: 0;
   margin-top: auto;
+
+  @include center;
+
+  > div {
+    width: 80%;
+
+    @include spaceBetween;
+
+    div {
+      width: 300px;
+    }
+  }
+  
+  .credit {
+    width: 90%;
+    border-top: 2px solid white;
+
+    font: bold 1em $mainFont;
+    
+    position: absolute;
+    bottom: 0;
+  
+    @include spaceBetween;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+  }
 }
