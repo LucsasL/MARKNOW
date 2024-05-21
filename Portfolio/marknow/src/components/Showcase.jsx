@@ -4,14 +4,26 @@ const Showcase = () => {
       <section id="showcase">
         <div className="window">
           <div className="bar"></div>
-        </div>
-        
-        <div className="window">
-          <div className="bar"></div>
+
+          <picture>
+            <img src="" alt="" />
+          </picture>
         </div>
 
         <div className="window">
           <div className="bar"></div>
+
+          <picture>
+            <img src="" alt="" />
+          </picture>
+        </div>
+
+        <div className="window">
+          <div className="bar"></div>
+
+          <picture>
+            <img src="" alt="" />
+          </picture>
         </div>
       </section>
     </>
