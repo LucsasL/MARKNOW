@@ -113,17 +113,26 @@ section#intro div.imgDiv {
 
 section#showcase {
   height: 700px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
 }
 section#showcase .window {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 300px;
   background: white;
+  margin: 20px;
   border: 2px solid #071108;
+  position: relative;
 }
 section#showcase .window .bar {
   height: 30px;
-  margin: 20px;
   border-bottom: 1px solid #071108;
+}
+section#showcase .window .bar {
+  background: #5AD2F4;
 }
 
 section#about {

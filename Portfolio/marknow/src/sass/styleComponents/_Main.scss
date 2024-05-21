@@ -29,10 +29,17 @@ section#intro {
 section#showcase {
   height: 700px;
 
+  @include spaceAround;
+
   .window {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 300px;
+
     @include window;
+
+    .bar {
+      background: $third;
+    }
   }
 }
 
