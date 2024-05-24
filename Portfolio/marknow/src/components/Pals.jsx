@@ -18,6 +18,10 @@ const Pals = () => {
 
   const changeColor = (msg) => {
     switch (msg) {
+      case 0:
+        setColor("$secondary");
+        return;
+
       case -100:
         setColor("$third");
         return;
@@ -71,7 +75,7 @@ const Pals = () => {
         <div className="palsComp" style={{ background: color }}>
           <div>
             <picture>
-              <img src="../src/img/coffee.jpg" alt="Poogle" />
+              <img src="../img/Poogle.webp" alt="Poogle" />
             </picture>
           </div>
 
