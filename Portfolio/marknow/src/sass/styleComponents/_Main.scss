@@ -153,12 +153,42 @@ section#pals {
 
   text-align: center;
   
-  @include verticalFlex;
   position: relative;
 
+  @include verticalFlex;
+
+  .msg {
+    width: 400%;
+    
+    @include spaceEvenly;
+
+    .palsInfo {
+      position: relative;
+      left: 0;
+      width: 100vw;
+      @include verticalFlex;
+    }
+  }
+
   > div {
+    width: 100vw;
     height: 70%;
-    @include verticalFlex;
+
+    @include spaceEvenly;
+  }
+  
+  .arrowsNav {
+    position: absolute;
+    font-size: 3em;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      left: 10%;
+    }
+
+    &:nth-child(2) {
+      left: 90%;
+    }
   }
 
   h1 {

@@ -21,6 +21,14 @@
   gap: 30px;
 }
 
+@mixin spaceEvenly {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
 @mixin verticalFlex {
   display: flex;
   flex-flow: column nowrap;
