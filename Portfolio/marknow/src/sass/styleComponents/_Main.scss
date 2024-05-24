@@ -331,11 +331,25 @@ section#improve {
     > div:nth-child(1) {
       background: $fifth;
       grid-row: 1 / span 2;
+
+      @include verticalFlex;
+      
+      h1 {
+        font-size: 4em;
+        transform: rotate(-90deg);
+        width: 100%;
+      }
     }
 
     > div:nth-child(2) {
       background: $primary;
       grid-column: 2 / span 3;
+
+      @include verticalFlex;
+
+      button {
+        width: 100%;
+      }
     }
 
     > div:nth-child(3) {

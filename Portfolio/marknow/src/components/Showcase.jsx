@@ -27,7 +27,7 @@ const Showcase = () => {
 
           <div className="content">
             <picture>
-              <img src="../img/coffee.jpg" alt="Coffee" />
+              <img src="../src/img/coffee.jpg" alt="Coffee" />
             </picture>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Showcase = () => {
 
           <div className="content">
             <picture>
-              <img src="../img/burger.jpg" alt="Burger" />
+              <img src="../src/img/coffee.jpg" alt="Burger" />
             </picture>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Showcase = () => {
 
           <div className="content">
             <picture>
-              <img src="../img/coffee.jpg" alt="Coffee" />
+              <img src="../src/img/coffee.jpg" alt="Coffee" />
             </picture>
           </div>
         </div>

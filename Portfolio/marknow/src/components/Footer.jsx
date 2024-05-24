@@ -13,6 +13,7 @@ const Footer = () => {
             </p>
 
             <input type="text" id="inp" />
+            <input type="submit" value="→" />
           </div>
 
           <div>

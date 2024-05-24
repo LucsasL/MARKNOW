@@ -35,7 +35,7 @@ button.primary {
   align-items: center;
 }
 button.primary:hover {
-  box-shadow: 0px 0px transparent;
+  box-shadow: 0px 0px black;
 }
 button.primary a {
   display: block;
@@ -413,10 +413,26 @@ section#improve > div div {
 section#improve > div > div:nth-child(1) {
   background: #F9C976;
   grid-row: 1/span 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+section#improve > div > div:nth-child(1) h1 {
+  font-size: 4em;
+  transform: rotate(-90deg);
+  width: 100%;
 }
 section#improve > div > div:nth-child(2) {
   background: #EBBAB9;
   grid-column: 2/span 3;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+section#improve > div > div:nth-child(2) button {
+  width: 100%;
 }
 section#improve > div > div:nth-child(3) {
   background: #7FB685;
@@ -474,9 +490,20 @@ footer a {
   font-weight: bold;
 }
 footer input {
-  width: 100%;
   border: 3px solid black;
+}
+footer input[type=text] {
+  width: calc(100% - 60px);
   box-shadow: -5px 5px black;
+}
+footer input[type=submit] {
+  background: #EF6F6C;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  line-height: 100%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -68,7 +68,31 @@ const Pals = () => {
           </div>
         </div>
 
-        <div className="palsComp" style={{ background: color }}></div>
+        <div className="palsComp" style={{ background: color }}>
+          <div>
+            <picture>
+              <img src="../src/img/coffee.jpg" alt="Poogle" />
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <img src="../src/img/coffee.jpg" alt="Faceduck" />
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <img src="../src/img/coffee.jpg" alt="Rabbit" />
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <img src="../src/img/coffee.jpg" alt="YouCook" />
+            </picture>
+          </div>
+        </div>
       </section>
     </>
   );

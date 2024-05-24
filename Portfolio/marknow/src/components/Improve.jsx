@@ -21,7 +21,8 @@ const Improve = () => {
 
           <div>
             <h2>
-              BE AHEAD OF 99%
+              AHEAD OF <br />
+              <span style={{ fontSize: "2.6em", marginTop: 0 }}>99%</span>
             </h2>
           </div>
 
