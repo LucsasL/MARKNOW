@@ -61,6 +61,13 @@ a {
   text-decoration: none;
 }
 
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
 header {
   background: #5AD2F4;
   width: 100%;
@@ -340,11 +347,18 @@ footer .credit {
   gap: 30px;
 }
 footer ul li {
-  display: inline-block;
+  display: block;
+  font-size: 1.2em;
+  margin: 20px;
 }
 footer a {
   color: white;
   font-weight: bold;
+}
+footer input {
+  width: 100%;
+  border: 3px solid black;
+  box-shadow: -5px 5px black;
 }
 
 /*# sourceMappingURL=index.css.map */

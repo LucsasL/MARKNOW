@@ -36,12 +36,20 @@ footer {
 
   ul {
     li {
-      display: inline-block;
+      display: block;
+      font-size: 1.2em;
+      margin: 20px;
     }
   }
 
   a {
     color: white;
     font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    border: 3px solid black;
+    box-shadow: -5px 5px black;
   }
 }
