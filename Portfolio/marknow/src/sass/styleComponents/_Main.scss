@@ -27,16 +27,74 @@ section#intro {
 
 // Showcase Settings
 section#showcase {
-  height: 700px;
+  position: relative;
+
+  @include center;
 
   .window {
     width: 500px;
     height: 300px;
+    position: relative;
 
     @include window;
-
+    
     .bar {
+      height: 45px;
       background: $third;
+    }
+    
+    .content {
+      height: calc(100% - 45px);
+      @include center;
+    }
+
+    &.big {
+      width: 700px;
+      height: 500px;
+    }
+
+    &.small1 {
+      position: absolute;
+      top: 65%;
+      left: -15%;
+    }
+    
+    &.small2 {
+      box-shadow: 15px 15px black;
+      position: absolute;
+      top: -15%;
+      left: 75%;
+      
+    }
+  }
+
+  span {
+    font: 900 5em $mainFont;
+
+    &:nth-child(odd) {
+      position: absolute;
+      top: 0;
+      left: -10%;
+    }
+
+    &:nth-child(even) {
+      text-align: right;
+      position: absolute;
+      right: -10%;
+      bottom: 5%;
+    }
+
+    &:nth-child(2) {
+      color: transparent;
+      -webkit-text-stroke: 2px $dark;
+      z-index: 1;
+      
+    }
+
+    &:nth-child(3) {
+      color: transparent;
+      -webkit-text-stroke: 2px $dark;
+      z-index: 1;
     }
   }
 }

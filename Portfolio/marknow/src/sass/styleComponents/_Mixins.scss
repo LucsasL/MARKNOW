@@ -65,6 +65,7 @@
 // Container Elements
 @mixin window {
   background: white;
+  box-shadow: -15px 15px black;
   
   margin: 20px;
   border: 2px solid $dark;
