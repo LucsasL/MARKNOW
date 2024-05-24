@@ -1,23 +1,49 @@
+import { useState } from "react";
 import { palsInfo } from "../Utils/data";
 
 const Pals = () => {
+  const [position, setPosition] = useState(0);
+  const scrollMsg = (arr) => {
+    if (arr === "Prev" && position < 0) {
+      setPosition(position + 100);
+      
+    } else if (arr === "Next" && position > -300) {
+      setPosition(position - 100);
+    }
+
+  }
+
   return (
     <>
       <section id="pals">
         <div>
-          <div className="arrowsNav">
+          <div 
+            className="arrowsNav"
+            onClick={() => scrollMsg("Prev")}
+          >
             <picture>&lt;</picture>
           </div>
 
-          <div className="arrowsNav">
+          <div 
+            className="arrowsNav"
+            onClick={() => scrollMsg("Next")}
+          >
             <picture>&gt;</picture>
           </div>
 
-          <div className="msg">
+          <div 
+            className="msg"
+            style={{
+              left: (position + "%")
+            }}
+          >
             {
               palsInfo.map(({ author, quote, ceo }) => {
                 return (
-                  <div className="palsInfo">
+                  <div 
+                    className="palsInfo"
+                    key={Math.floor(Math.random()) * 100}
+                  >
                     <h1>OUR CLIENTS APPROVE</h1>
                     <p>
                       {quote}

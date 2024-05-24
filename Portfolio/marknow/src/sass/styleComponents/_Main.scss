@@ -159,12 +159,12 @@ section#pals {
 
   .msg {
     width: 400%;
+    position: relative;
+    left: 0;
     
     @include spaceEvenly;
 
     .palsInfo {
-      position: relative;
-      left: 0;
       width: 100vw;
       @include verticalFlex;
     }
@@ -181,6 +181,7 @@ section#pals {
     position: absolute;
     font-size: 3em;
     cursor: pointer;
+    z-index: 1;
 
     &:nth-child(1) {
       left: 10%;

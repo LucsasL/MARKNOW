@@ -9,7 +9,9 @@ html, body {
   background: #EBBAB9;
   color: #071108;
   width: 100%;
+  max-width: 100%;
   height: 100%;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -255,6 +257,8 @@ section#pals {
 }
 section#pals .msg {
   width: 400%;
+  position: relative;
+  left: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -262,8 +266,6 @@ section#pals .msg {
   gap: 30px;
 }
 section#pals .msg .palsInfo {
-  position: relative;
-  left: 0;
   width: 100vw;
   display: flex;
   flex-flow: column nowrap;
@@ -283,6 +285,7 @@ section#pals .arrowsNav {
   position: absolute;
   font-size: 3em;
   cursor: pointer;
+  z-index: 1;
 }
 section#pals .arrowsNav:nth-child(1) {
   left: 10%;
