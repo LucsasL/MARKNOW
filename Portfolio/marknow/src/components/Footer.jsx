@@ -23,16 +23,16 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="https://youtube.com">HOME</a>
+                <a href="index.html">HOME</a>
               </li>
               <li>
-                <a href="https://youtube.com">ABOUT US</a>
+                <a href="about.html">ABOUT US</a>
               </li>
               <li>
-                <a href="https://youtube.com">SERVICES</a>
+                <a href="#services">SERVICES</a>
               </li>
               <li>
-                <a href="https://youtube.com">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -44,10 +44,10 @@ const Footer = () => {
 
             <ul>
               <li>
-                <a href="https://youtube.com">@LUCSAS.L</a>
+                <a href="https://instagram.com/">@LUCSAS.L</a>
               </li>
               <li>
-                <a href="https://youtube.com">@LUCSASL</a>
+                <a href="https://github.com/lucsasl">@LUCSASL</a>
               </li>
               <li>
                 <a href="https://youtube.com">@LUCAS LIRA</a>
