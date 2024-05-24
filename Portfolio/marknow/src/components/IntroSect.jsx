@@ -2,7 +2,7 @@ const IntroSect = () => {
   return (
     <>
       <section id="intro">
-        <div>
+        <div className="introInfo">
           <h1>LOREM IPSULUM DOLORS</h1>
 
           <p>
@@ -12,13 +12,14 @@ const IntroSect = () => {
             laudantium tempore veritatis magni.
           </p>
 
-          <button className="primary">
-            <a href="https://youtube.com">Learn More</a>
-          </button>
-
-          <button className="primary">
-            <a href="https://youtube.com">SEE TEAM →</a>
-          </button>
+          <div>
+            <button className="primary">
+              <a href="https://youtube.com">Learn More</a>
+            </button>
+            <button className="secondary">
+              <a href="https://youtube.com">SEE TEAM →</a>
+            </button>
+          </div>
         </div>
 
         <div className="imgDiv">

@@ -31,6 +31,10 @@ button.primary {
   @include primaryButton;
 }
 
+button.secondary {
+  @include secondaryButton;
+}
+
 // Text Settings
 p {
   margin: 16px 0px;

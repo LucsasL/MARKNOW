@@ -23,7 +23,7 @@ const Showcase = () => {
         </span>
 
         <div className="window big">
-          <div className="bar"></div>
+          <div className="bar">X</div>
 
           <div className="content">
             <picture>
@@ -33,7 +33,7 @@ const Showcase = () => {
         </div>
 
         <div className="window small1">
-          <div className="bar"></div>
+          <div className="bar">X</div>
 
           <div className="content">
             <picture>
@@ -43,7 +43,7 @@ const Showcase = () => {
         </div>
 
         <div className="window small2">
-          <div className="bar"></div>
+          <div className="bar">X</div>
 
           <div className="content">
             <picture>

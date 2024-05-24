@@ -17,8 +17,21 @@ main {
 section#intro {
   @include spaceAround;
 
+  h1 {
+    font: bold 3em $mainFont;
+  }
+
+  .introInfo {
+    width: 50%;
+
+    div {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
   div.imgDiv {
-    width: 100%;
+    width: 50%;
     height: 100%;
     border: 5px solid $dark;
     border-radius: 10px;
@@ -39,8 +52,14 @@ section#showcase {
     @include window;
     
     .bar {
-      height: 45px;
       background: $third;
+
+      height: 45px;
+      padding: 0px 20px;
+      
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
     
     .content {

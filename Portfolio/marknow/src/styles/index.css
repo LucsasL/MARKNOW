@@ -44,6 +44,24 @@ button.primary a {
   padding: 10px 20px;
 }
 
+button.secondary {
+  background: transparent;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.secondary a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+}
+
 p {
   margin: 16px 0px;
   font-size: 1.2em;
@@ -111,8 +129,18 @@ section#intro {
   align-items: center;
   gap: 30px;
 }
+section#intro h1 {
+  font: bold 3em system-ui, sans-serif;
+}
+section#intro .introInfo {
+  width: 50%;
+}
+section#intro .introInfo div {
+  display: flex;
+  justify-content: flex-start;
+}
 section#intro div.imgDiv {
-  width: 100%;
+  width: 50%;
   height: 100%;
   border: 5px solid #071108;
   border-radius: 10px;
@@ -138,8 +166,12 @@ section#showcase .window .bar {
   border-bottom: 1px solid #071108;
 }
 section#showcase .window .bar {
-  height: 45px;
   background: #5AD2F4;
+  height: 45px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 section#showcase .window .content {
   height: calc(100% - 45px);
