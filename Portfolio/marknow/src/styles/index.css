@@ -259,11 +259,15 @@ section#pals .msg {
   width: 400%;
   position: relative;
   left: 0;
+  transition-property: left, background, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 30px;
+  gap: 0;
 }
 section#pals .msg .palsInfo {
   width: 100vw;
