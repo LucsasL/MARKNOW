@@ -88,6 +88,16 @@
     height: 100%;
     padding: 10px 20px;
   }
+
+  .buttArrow {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    .buttArrow {
+      margin-left: 20px;
+    }
+  }
 }
 
 // Container Elements

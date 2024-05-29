@@ -53,13 +53,13 @@ const Pals = () => {
         <div>
           <div className="arrowsNav" onClick={() => scrollMsg("Prev")}>
             <picture>
-              <img src={arrowPrev} alt="Previous Testimonial" />
+              <img src={arrowPrev} alt="Previous Testimonial" className="PrArrow" />
             </picture>
           </div>
 
           <div className="arrowsNav" onClick={() => scrollMsg("Next")}>
             <picture>
-              <img src={arrowNext} alt="Next Testimonial" />
+              <img src={arrowNext} alt="Next Testimonial" className="NeArrow" />
             </picture>
           </div>
 

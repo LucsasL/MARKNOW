@@ -1,25 +1,24 @@
+// import { FaArrowRight } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <>
       <footer>
         <div>
           <div>
-            <h1>
-              This is MARKDOWN
-            </h1>
+            <h1>This is MARKDOWN</h1>
 
-            <p>
-              SIGN TO OUR NEWSLETTER:
-            </p>
+            <p>SIGN TO OUR NEWSLETTER:</p>
 
             <input type="text" id="inp" />
-            <input type="submit" value="→" />
+            <input
+              type="submit"
+              value="→"
+              />
           </div>
 
           <div>
-            <h2>
-              QUICK LINKS:
-            </h2>
+            <h2>QUICK LINKS:</h2>
 
             <ul>
               <li>
@@ -38,9 +37,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2>
-              MY SOCIALS:
-            </h2>
+            <h2>MY SOCIALS:</h2>
 
             <ul>
               <li>
@@ -54,20 +51,17 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
         </div>
 
         <div className="credit">
-          <p>
-            THIS IS A FICTITIOUS COMPANY
-          </p>
+          <p>THIS IS A FICTITIOUS COMPANY</p>
           <p>
             BUILT BY <a href="https://github.com/lucsasl">LUCSAS</a>
           </p>
         </div>
       </footer>
     </>
-  )
+  );
 }
 
 export default Footer;

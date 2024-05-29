@@ -1,3 +1,5 @@
+import { FaArrowRight } from "react-icons/fa";
+
 const IntroSect = () => {
   return (
     <>
@@ -17,7 +19,10 @@ const IntroSect = () => {
               <a href="https://youtube.com">Learn More</a>
             </button>
             <button className="secondary">
-              <a href="https://youtube.com">SEE TEAM →</a>
+              <a href="https://youtube.com">
+                <span>SEE TEAM</span> 
+                <FaArrowRight className="buttArrow" />
+              </a>
             </button>
           </div>
         </div>
@@ -30,6 +35,6 @@ const IntroSect = () => {
       </section>
     </>
   );
-}
+};
 
 export default IntroSect;

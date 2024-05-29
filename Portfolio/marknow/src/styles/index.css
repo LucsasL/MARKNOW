@@ -61,6 +61,12 @@ button.secondary a {
   height: 100%;
   padding: 10px 20px;
 }
+button.secondary .buttArrow {
+  margin-left: 10px;
+}
+button.secondary:hover .buttArrow {
+  margin-left: 20px;
+}
 
 p {
   margin: 16px 0px;
@@ -315,6 +321,7 @@ section#pals h1 {
 section#pals h2 {
   color: #EF6F6C;
   font: 900 2em system-ui, sans-serif;
+  text-transform: uppercase;
 }
 section#pals h2 span {
   font: normal 0.6em system-ui, sans-serif;
