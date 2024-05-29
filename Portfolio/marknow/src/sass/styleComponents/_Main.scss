@@ -76,6 +76,10 @@ section#showcase {
       position: absolute;
       top: 65%;
       left: -15%;
+
+      picture {
+        width: 40%;
+      }
     }
     
     &.small2 {
@@ -83,6 +87,10 @@ section#showcase {
       position: absolute;
       top: -15%;
       left: 75%;
+
+      picture {
+        width: 40%;
+      }
     }
 
     picture {

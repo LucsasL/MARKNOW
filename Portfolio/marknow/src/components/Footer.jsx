@@ -1,6 +1,9 @@
 // import { FaArrowRight } from "react-icons/fa";
+import { useState } from "react";
 
 const Footer = () => {
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+
   return (
     <>
       <footer>
@@ -10,7 +13,13 @@ const Footer = () => {
 
             <p>SIGN TO OUR NEWSLETTER:</p>
 
-            <input type="text" id="inp" />
+            <input 
+              type="text" 
+              id="inp" 
+              placeholder="Enter your email..."
+              value={newsletterEmail}
+              onChange={(e) => setNewsletterEmail(e.target.value)}
+            />
             <input
               type="submit"
               value="→"

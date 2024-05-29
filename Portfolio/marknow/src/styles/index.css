@@ -86,7 +86,7 @@ a {
 }
 
 input {
-  padding: 10px;
+  padding: 12px 20px;
   border: none;
   border-radius: 20px;
   outline: none;
@@ -199,11 +199,17 @@ section#showcase .window.small1 {
   top: 65%;
   left: -15%;
 }
+section#showcase .window.small1 picture {
+  width: 40%;
+}
 section#showcase .window.small2 {
   box-shadow: 15px 15px black;
   position: absolute;
   top: -15%;
   left: 75%;
+}
+section#showcase .window.small2 picture {
+  width: 40%;
 }
 section#showcase .window picture {
   width: 50%;
