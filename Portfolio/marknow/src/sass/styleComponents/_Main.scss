@@ -213,8 +213,11 @@ section#pals {
   }
 
   h1 {
-    font: 900 3em $mainFont;
+    font: 900 3.4em $mainFont;
     color: $secondary;
+
+    position: absolute;
+    top: 10%;
   }
 
   h2 {
@@ -228,7 +231,7 @@ section#pals {
   }
 
   p {
-    width: 60%;
+    width: 50%;
   }
 
   .palsComp {

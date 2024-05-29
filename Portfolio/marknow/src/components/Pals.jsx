@@ -1,17 +1,22 @@
+// Importing States
 import { useState } from "react";
-import { palsInfo } from "../Utils/data";
 
+// Importing Data
+import { palsInfo, useEffect } from "../Utils/data";
+
+// Importing Images
 import arrowPrev from "../icons/back-arrow.svg";
 import arrowNext from "../icons/front-arrow.svg";
-
-import poogle from "../img/poogle.webp";
 // import faceDuck from "../img/faceduck.png";
+import poogle from "../img/poogle.webp";
 import rabbit from "../img/rabbit.webp";
 import youDude from "../img/YouDude.png";
 
 const Pals = () => {
   const [position, setPosition] = useState(0);
   const [color, setColor] = useState("$secondary");
+  const [prevArrOpacity, setPrevArrOpacity] = useState(1);
+  const [nextArrOpacity, setNextArrOpacity] = useState(1);
 
   const scrollMsg = (arr) => {
     if (arr === "Prev" && position < 0) {
@@ -22,6 +27,20 @@ const Pals = () => {
     }
 
     changeColor(position);
+  }
+
+  const arrOpacity = () => {
+    if (position === 0) {
+      setPrevArrOpacity(0.3);
+    } else {
+      setPrevArrOpacity(1);
+    }
+
+    if (position === -300) {
+      setNextArrOpacity(0.3);
+    } else {
+      setNextArrOpacity(1);
+    }
   }
 
   const changeColor = (msg) => {
@@ -51,17 +70,33 @@ const Pals = () => {
     <>
       <section id="pals">
         <div>
-          <div className="arrowsNav" onClick={() => scrollMsg("Prev")}>
+          <div
+            className="arrowsNav"
+            onClick={() => scrollMsg("Prev")}
+            onLoad={() => arrOpacity()}
+            style={{ opacity: prevArrOpacity }}
+          >
             <picture>
-              <img src={arrowPrev} alt="Previous Testimonial" className="PrArrow" />
+              <img
+                src={arrowPrev}
+                alt="Previous Testimonial"
+                className="PrArrow"
+              />
             </picture>
           </div>
 
-          <div className="arrowsNav" onClick={() => scrollMsg("Next")}>
+          <div
+            className="arrowsNav"
+            onClick={() => scrollMsg("Next")}
+            onLoad={() => arrOpacity()}
+            style={{ opacity: nextArrOpacity }}
+          >
             <picture>
               <img src={arrowNext} alt="Next Testimonial" className="NeArrow" />
             </picture>
           </div>
+
+          <h1 style={{ color: color }}>OUR CLIENTS APPROVE</h1>
 
           <div
             className="msg"
@@ -72,7 +107,6 @@ const Pals = () => {
             {palsInfo.map(({ author, quote, ceo }) => {
               return (
                 <div className="palsInfo" key={Math.floor(Math.random()) * 100}>
-                  <h1 style={{ color: color }}>OUR CLIENTS APPROVE</h1>
                   <p>{quote}</p>
                   <h2 style={{ color: color }}>
                     {author} <br />

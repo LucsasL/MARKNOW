@@ -321,8 +321,10 @@ section#pals .arrowsNav:nth-child(2) {
   left: 90%;
 }
 section#pals h1 {
-  font: 900 3em system-ui, sans-serif;
+  font: 900 3.4em system-ui, sans-serif;
   color: #EF6F6C;
+  position: absolute;
+  top: 10%;
 }
 section#pals h2 {
   color: #EF6F6C;
@@ -333,7 +335,7 @@ section#pals h2 span {
   font: normal 0.6em system-ui, sans-serif;
 }
 section#pals p {
-  width: 60%;
+  width: 50%;
 }
 section#pals .palsComp {
   background: #EF6F6C;
