@@ -199,6 +199,9 @@ section#showcase .window.small1 {
   top: 65%;
   left: -15%;
 }
+section#showcase .window.small1 .bar {
+  background: #F9C976;
+}
 section#showcase .window.small1 picture {
   width: 40%;
 }
@@ -207,6 +210,9 @@ section#showcase .window.small2 {
   position: absolute;
   top: -15%;
   left: 75%;
+}
+section#showcase .window.small2 .bar {
+  background: #7FB685;
 }
 section#showcase .window.small2 picture {
   width: 40%;

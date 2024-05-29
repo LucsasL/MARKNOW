@@ -76,7 +76,11 @@ section#showcase {
       position: absolute;
       top: 65%;
       left: -15%;
-
+      
+      .bar {
+        background: $fifth;
+      }
+      
       picture {
         width: 40%;
       }
@@ -87,6 +91,10 @@ section#showcase {
       position: absolute;
       top: -15%;
       left: 75%;
+
+      .bar {
+        background: $fourth;
+      }
 
       picture {
         width: 40%;

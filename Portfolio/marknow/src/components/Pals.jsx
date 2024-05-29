@@ -106,7 +106,7 @@ const Pals = () => {
           >
             {palsInfo.map(({ author, quote, ceo }) => {
               return (
-                <div className="palsInfo" key={Math.floor(Math.random()) * 100}>
+                <div className="palsInfo" key={Math.floor(Math.random() * 100)}>
                   <p>{quote}</p>
                   <h2 style={{ color: color }}>
                     {author} <br />
