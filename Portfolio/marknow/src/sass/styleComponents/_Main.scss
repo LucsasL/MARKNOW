@@ -143,6 +143,7 @@ section#showcase {
 
 // About Section
 section#about {
+  width: 85%;
   text-align: center;
 
   > div {
@@ -151,11 +152,13 @@ section#about {
     div {
       background: $fifth;
 
-      width: 350px;
-      height: 350px;
+      width: 400px;
+      height: 400px;
       border: 8px solid $dark;
       border-radius: 50%;
-
+      
+      position: relative;
+      
       @include center;
     }
 
@@ -172,7 +175,7 @@ section#about {
 
   h1 {
     font: normal 3em sans-serif;
-    margin: 40px 0px;
+    margin: 50px 0px 70px 0px;
   }
 }
 
