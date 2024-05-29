@@ -135,7 +135,7 @@ main section {
 
 section#intro {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -151,7 +151,7 @@ section#intro .introInfo div {
   justify-content: flex-start;
 }
 section#intro div.imgDiv {
-  width: 50%;
+  width: 40%;
   height: 100%;
   border: 5px solid #071108;
   border-radius: 10px;
@@ -253,7 +253,7 @@ section#about {
 }
 section#about > div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -356,7 +356,7 @@ section#pals .palsComp {
 
 section#services > div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -393,7 +393,7 @@ section#services h1 {
 section#reach {
   height: 900px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -447,8 +447,8 @@ section#improve > div {
   width: 70%;
   height: 60%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(1fr, 100%));
+  grid-template-rows: repeat(2, minmax(1fr, 100%));
 }
 section#improve > div div {
   box-shadow: -10px 10px #071108;
@@ -487,8 +487,8 @@ section#improve > div > div:nth-child(3) {
 section#improve > div > div:nth-child(4) {
   background: #F9C976;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(1fr, 100%));
+  grid-template-rows: repeat(2, minmax(1fr, 100%));
 }
 section#improve .waves:nth-child(1) {
   position: absolute;

@@ -15,7 +15,7 @@
 
 @mixin spaceAround {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -38,8 +38,8 @@
 
 @mixin grid($columns, $rows) {
   display: grid;
-  grid-template-columns: repeat($columns, 1fr);
-  grid-template-rows: repeat($rows, 1fr);
+  grid-template-columns: repeat($columns, minmax(1fr, 100%));
+  grid-template-rows: repeat($rows, minmax(1fr, 100%));
 }
 
 // Buttons elements
