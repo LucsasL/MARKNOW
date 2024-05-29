@@ -148,6 +148,17 @@ section#about {
   > div {
     @include spaceAround;
 
+    div {
+      background: $fifth;
+
+      width: 350px;
+      height: 350px;
+      border: 8px solid $dark;
+      border-radius: 50%;
+
+      @include center;
+    }
+
     h2 {
       font-weight: normal;
       font-size: 2em;
@@ -160,7 +171,7 @@ section#about {
   }
 
   h1 {
-    font-size: 3em;
+    font: normal 3em sans-serif;
     margin: 40px 0px;
   }
 }
@@ -253,12 +264,26 @@ section#pals {
 
     position: absolute;
     top: 90%;
+
+    > div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      picture,
+      img {
+        @include center;
+      }
+    }
   }
 }
 
 // Services Section
 section#services {
+  width: 83%;
+
   > div {
+
     @include spaceAround;
   }
 
@@ -268,7 +293,7 @@ section#services {
     width: 400px;
     height: 600px;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0px;
     border: 3px solid black;
     border-radius: 20px;
 

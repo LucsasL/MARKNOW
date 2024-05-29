@@ -258,6 +258,16 @@ section#about > div {
   align-items: center;
   gap: 30px;
 }
+section#about > div div {
+  background: #F9C976;
+  width: 350px;
+  height: 350px;
+  border: 8px solid #071108;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section#about > div h2 {
   font-weight: normal;
   font-size: 2em;
@@ -267,7 +277,7 @@ section#about > div h2 span {
   font: 900 3em sans-serif;
 }
 section#about h1 {
-  font-size: 3em;
+  font: normal 3em sans-serif;
   margin: 40px 0px;
 }
 
@@ -353,7 +363,21 @@ section#pals .palsComp {
   position: absolute;
   top: 90%;
 }
+section#pals .palsComp > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+section#pals .palsComp > div picture,
+section#pals .palsComp > div img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+section#services {
+  width: 83%;
+}
 section#services > div {
   display: flex;
   flex-flow: row wrap;
@@ -366,7 +390,7 @@ section#services .services {
   width: 400px;
   height: 600px;
   padding: 20px;
-  margin: 10px;
+  margin: 10px 0px;
   border: 3px solid black;
   border-radius: 20px;
   display: flex;
