@@ -1,3 +1,5 @@
+import earth from "../img/earth.png";
+
 const Reach = () => {
   return (
     <>
@@ -7,7 +9,9 @@ const Reach = () => {
         </div>
 
         <div className="earth">
-          
+          <picture>
+            <img src={earth} alt="" />
+            </picture>
         </div>
       </section>
     </>

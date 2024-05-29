@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { palsInfo } from "../Utils/data";
 
+import poogle from "../img/poogle.webp";
+// import faceDuck from "../img/faceduck.png";
+import youDude from "../img/YouDude.png";
+
 const Pals = () => {
   const [position, setPosition] = useState(0);
   const [color, setColor] = useState("$secondary");
@@ -75,7 +79,7 @@ const Pals = () => {
         <div className="palsComp" style={{ background: color }}>
           <div>
             <picture>
-              <img src="../img/Poogle.webp" alt="Poogle" />
+              <img src={poogle} alt="Poogle" />
             </picture>
           </div>
 
@@ -93,7 +97,7 @@ const Pals = () => {
 
           <div>
             <picture>
-              <img src="../src/img/coffee.jpg" alt="YouCook" />
+              <img src={youDude} alt="YouCook" />
             </picture>
           </div>
         </div>

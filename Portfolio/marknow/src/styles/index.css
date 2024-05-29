@@ -86,6 +86,11 @@ input {
   outline: none;
 }
 
+picture img {
+  width: 100%;
+  height: 100%;
+}
+
 header {
   background: #5AD2F4;
   width: 100%;
@@ -193,6 +198,12 @@ section#showcase .window.small2 {
   position: absolute;
   top: -15%;
   left: 75%;
+}
+section#showcase .window picture {
+  width: 50%;
+}
+section#showcase .window picture img {
+  border-radius: 20px;
 }
 section#showcase span {
   font: 900 5em system-ui, sans-serif;
@@ -385,8 +396,9 @@ section#reach .earth {
 section#improve {
   background: #5AD2F4;
   width: 100%;
-  height: 800px;
+  height: 1100px;
   margin: 0px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,7 +410,7 @@ section#improve h2 {
 }
 section#improve > div {
   width: 70%;
-  height: 80%;
+  height: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -442,6 +454,15 @@ section#improve > div > div:nth-child(4) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+section#improve .waves:nth-child(1) {
+  position: absolute;
+  top: -19.5%;
+}
+section#improve .waves:nth-child(2) {
+  position: absolute;
+  top: 80.5%;
+  left: -10%;
 }
 
 footer {

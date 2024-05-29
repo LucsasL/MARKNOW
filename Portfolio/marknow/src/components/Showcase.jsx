@@ -1,3 +1,7 @@
+import coffee from "../img/coffee.jpg";
+import burger from "../img/burger.jpg";
+import shoes from "../img/shoes.jpg";
+
 const Showcase = () => {
   return (
     <>
@@ -27,7 +31,7 @@ const Showcase = () => {
 
           <div className="content">
             <picture>
-              <img src="../src/img/coffee.jpg" alt="Coffee" />
+              <img src={burger} alt="Coffee" />
             </picture>
           </div>
         </div>
@@ -37,7 +41,7 @@ const Showcase = () => {
 
           <div className="content">
             <picture>
-              <img src="../src/img/coffee.jpg" alt="Burger" />
+              <img src={shoes} alt="Burger" />
             </picture>
           </div>
         </div>
@@ -47,7 +51,7 @@ const Showcase = () => {
 
           <div className="content">
             <picture>
-              <img src="../src/img/coffee.jpg" alt="Coffee" />
+              <img src={coffee} alt="Coffee" />
             </picture>
           </div>
         </div>
