@@ -392,6 +392,20 @@ section#reach .earth {
   border: 10px solid black;
   border-radius: 50%;
 }
+section#reach .earth .txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rot-txt 10s linear infinite;
+}
+section#reach .earth .txt span {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform-origin: 0 250px;
+  font-size: 1em;
+  font-weight: 900;
+}
 
 section#improve {
   background: #5AD2F4;

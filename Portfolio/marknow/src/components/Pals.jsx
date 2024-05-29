@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { palsInfo } from "../Utils/data";
 
+import arrowPrev from "../icons/back-arrow.svg";
+import arrowNext from "../icons/front-arrow.svg";
+
 import poogle from "../img/poogle.webp";
 // import faceDuck from "../img/faceduck.png";
+import rabbit from "../img/rabbit.webp";
 import youDude from "../img/YouDude.png";
 
 const Pals = () => {
@@ -48,11 +52,15 @@ const Pals = () => {
       <section id="pals">
         <div>
           <div className="arrowsNav" onClick={() => scrollMsg("Prev")}>
-            <picture>&lt;</picture>
+            <picture>
+              <img src={arrowPrev} alt="Previous Testimonial" />
+            </picture>
           </div>
 
           <div className="arrowsNav" onClick={() => scrollMsg("Next")}>
-            <picture>&gt;</picture>
+            <picture>
+              <img src={arrowNext} alt="Next Testimonial" />
+            </picture>
           </div>
 
           <div
@@ -91,7 +99,7 @@ const Pals = () => {
 
           <div>
             <picture>
-              <img src="../src/img/coffee.jpg" alt="Rabbit" />
+              <img src={rabbit} alt="Rabbit" />
             </picture>
           </div>
 
