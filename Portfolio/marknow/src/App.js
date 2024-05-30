@@ -1,4 +1,14 @@
 // import { useContext } from "react";
+import Navbar from "./components/Navbar/NavbarElements";
+import {
+  BrowseRouter as Router,
+  Routes,
+  Route 
+} from "react-router-dom";
+
+// Pages Import
+import About from "./components/About";
+import Contact from "./components/pages/contact";
 
 import "./styles/index.css";
 import Header from "./components/Header";
@@ -9,11 +19,13 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div>
-        <Header />
-        <MainCont />
-        <Footer />
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <MainCont />
+          <Footer />
+        </div>
+      </Router>
     </>
   );
 }
