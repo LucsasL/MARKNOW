@@ -1,30 +1,30 @@
-// import { useContext } from "react";
-import Navbar from "./components/Navbar/NavbarElements";
+// Hooks Import
 import {
-  BrowseRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route 
 } from "react-router-dom";
+// import { useContext } from "react";
+// import Navbar from "./components/Navbar/NavbarElements";
 
 // Pages Import
+import Home from "./components/pages/home";
 import About from "./components/About";
 import Contact from "./components/pages/contact";
 
-import "./styles/index.css";
-import Header from "./components/Header";
-import MainCont from "./components/MainCont";
-import Footer from "./components/Footer";
+// Styles and animations
+// import "./styles/index.css";
 // import "./animation";
 
 function App() {
   return (
     <>
       <Router>
-        <div>
-          <Header />
-          <MainCont />
-          <Footer />
-        </div>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </Router>
     </>
   );
