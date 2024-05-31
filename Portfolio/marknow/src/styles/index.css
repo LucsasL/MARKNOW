@@ -530,14 +530,9 @@ section#improve > div > div:nth-child(4) {
   grid-template-columns: repeat(2, minmax(1fr, 100%));
   grid-template-rows: repeat(2, minmax(1fr, 100%));
 }
-section#improve .waves:nth-child(1) {
+section#improve .waves {
   position: absolute;
   top: -19.5%;
-}
-section#improve .waves:nth-child(2) {
-  position: absolute;
-  top: 80.5%;
-  left: -10%;
 }
 
 footer {
@@ -556,6 +551,7 @@ footer {
 }
 footer > div {
   width: 80%;
+  z-index: 1;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -602,6 +598,10 @@ footer input[type=submit] {
   border-radius: 50%;
   line-height: 100%;
   cursor: pointer;
+}
+footer .waves {
+  position: absolute;
+  top: -51%;
 }
 
 /*# sourceMappingURL=index.css.map */

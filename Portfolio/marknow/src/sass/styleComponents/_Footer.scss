@@ -14,6 +14,7 @@ footer {
 
   > div {
     width: 80%;
+    z-index: 1;
 
     @include spaceBetween;
 
@@ -68,5 +69,10 @@ footer {
       
       cursor: pointer;
     }
+  }
+
+  .waves {
+    position: absolute;
+    top: -51%;
   }
 }
