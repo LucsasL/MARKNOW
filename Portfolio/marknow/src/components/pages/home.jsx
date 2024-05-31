@@ -1,14 +1,10 @@
-import Header from "../Header";
-import MainCont from "../MainCont";
-import Footer from "../Footer";
+import MainCont from "./indexComps/MainCont";
 
 function Home() {
   return (
     <>
       <div>
-        <Header />
         <MainCont />
-        <Footer />
       </div>
     </>
   );

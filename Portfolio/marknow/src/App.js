@@ -1,15 +1,13 @@
 // Hooks Import
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route 
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { useContext } from "react";
-// import Navbar from "./components/Navbar/NavbarElements";
 
 // Pages Import
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import Home from "./components/pages/home";
-import About from "./components/About";
+import About from "./components/pages/indexComps/About";
 import Contact from "./components/pages/contact";
 
 // Styles and animations
@@ -20,11 +18,13 @@ function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
