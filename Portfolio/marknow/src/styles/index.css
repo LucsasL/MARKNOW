@@ -23,6 +23,7 @@ button.primary {
   border-radius: 10px;
   outline: none;
   font-weight: bold;
+  cursor: pointer;
   transition: box-shadow 0.5s ease;
   display: flex;
   justify-content: center;
@@ -62,6 +63,13 @@ button.secondary:hover .buttArrow {
   margin-left: 20px;
 }
 
+fieldset {
+  border: none;
+}
+fieldset legend {
+  display: none;
+}
+
 p {
   margin: 16px 0px;
   font-size: 1.2em;
@@ -79,7 +87,7 @@ a {
   text-decoration: none;
 }
 
-input {
+input, textarea {
   padding: 12px 20px;
   border: none;
   border-radius: 20px;
@@ -602,6 +610,54 @@ footer input[type=submit] {
 footer .waves {
   position: absolute;
   top: -51%;
+}
+
+section#form {
+  margin-bottom: 300px;
+}
+section#form > div {
+  background: white;
+  box-shadow: -15px 15px 0px #071108;
+  padding: 20px;
+  border: 7px solid #071108;
+  border-radius: 20px;
+}
+section#form > div div {
+  padding: 10px;
+}
+section#form input[type=text],
+section#form input[type=email],
+section#form textarea {
+  width: 100%;
+  border: 2px solid #071108;
+}
+section#form input[type=submit] {
+  background: #EF6F6C;
+  box-shadow: 0px 5px black;
+  margin: 10px;
+  border: 2px solid #071108;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#form input[type=submit]:hover {
+  box-shadow: 0px 0px black;
+}
+section#form input[type=submit] a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+}
+section#form label {
+  display: inline-block;
+  padding-bottom: 15px;
+  font: bold 1em system-ui, sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
