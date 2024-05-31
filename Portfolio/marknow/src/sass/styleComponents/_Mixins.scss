@@ -29,10 +29,10 @@
   gap: 30px;
 }
 
-@mixin verticalFlex {
+@mixin verticalFlex($vert: space-around) {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: $vert;
   align-items: center;
 }
 
