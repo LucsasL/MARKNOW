@@ -2,13 +2,12 @@ function Top() {
   return (
     <>
       <section id="top">
-            <div class="cont">
-
-              <h1 class="bolder center title">
+            <div>
+              <h1 className="bolder center title">
                 Be in the top with the greatest
               </h1>
 
-              <div class="two-columns">
+              <div>
                 <div>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sapiente doloremque quia ducimus nostrum officiis aliquid sed nesciunt, nisi necessitatibus corrupti non, alias dignissimos magnam. Totam impedit magnam voluptatibus perferendis.
@@ -33,7 +32,7 @@ function Top() {
                   </div>
                 </div>
 
-                <div class="img-prof">
+                <div className="img-prof">
                   <picture>
                     {/* <source media="(min-width: )" srcset=""> */}
                     <figure>
@@ -42,7 +41,6 @@ function Top() {
                   </picture>
                 </div>
               </div>
-
             </div>
           </section>
     </>

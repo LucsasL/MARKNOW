@@ -23,6 +23,7 @@ function Contact() {
                       placeholder="Your name"
                       value={nameInput}
                       onChange={(e) => setNameInput(e.target.value)}
+                      minLength={8}
                       required
                     />
                 </div>
