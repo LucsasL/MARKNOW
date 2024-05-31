@@ -12,19 +12,19 @@ const Header = () => {
           <div>
             <ul>
               <li>
-                <NavLink to={"./components/pages/home.jsx"}>HOME</NavLink>
+                <NavLink to="/">HOME</NavLink>
               </li>
 
               <li>
-                <NavLink to={"./components/pages/about.jsx"}>ABOUT US</NavLink>
+                <NavLink to="/about">ABOUT US</NavLink>
               </li>
 
               <li>
-                <NavLink to={"./components/pages/home.jsx#services"}>SERVICES</NavLink>
+                <a href="/#services">SERVICES</a>
               </li>
 
               <li>
-                <NavLink to={"./components/pages/contact.jsx"}>CONTACT</NavLink>
+                <NavLink to="/contact">CONTACT</NavLink>
               </li>
             </ul>
           </div>

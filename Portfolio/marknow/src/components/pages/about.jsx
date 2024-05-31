@@ -1,9 +1,19 @@
+import IntroSectAbout from "./aboutComps/IntroSectAbout";
+import Cases from "./aboutComps/Cases";
+import Top from "./aboutComps/Top";
+import Join from "./aboutComps/Join";
+
 function About() {
   return (
     <>
-      <div>
-        
-      </div>
+      <main>
+        <div>
+          <IntroSectAbout />
+          <Cases />
+          <Top />
+          <Join />
+        </div>
+      </main>
     </>
   )
 }

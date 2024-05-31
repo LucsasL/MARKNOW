@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./components/pages/home";
-import About from "./components/pages/indexComps/About";
+import About from "./components/pages/about";
 import Contact from "./components/pages/contact";
 
 // Styles and animations
