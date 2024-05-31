@@ -13,12 +13,18 @@ section#introAbout {
 
 // Cases Section
 section#cases {
+  width: 100%;
+
+  > div {
+    width: 100%;
+  }
+
   .case {
     @include spaceAround;
 
     div {
       width: 50%;
-      height: 90%;
+      height: 300px;
     }
 
     .window {
@@ -50,41 +56,87 @@ section#top {
 
   width: 100%;
   height: 700px;
+  padding: 30px 0px;
 
   > div {
+    width: 100%;
+    height: 100%;
+
+    @include verticalFlex;
+  }
+
+  .profInfo {
+    width: 100%;
+
     @include spaceAround;
 
-    height: 400px;
+    div {
+      width: 40%;
+      height: 400px;
+    }
+
+    .profDesc {
+      @include verticalFlex;
+      
+      .buttonDiv {
+        width: 100%;
+
+        @include center;
+      }
+    }
+    
+    .imgProf {
+      width: 50%;
+
+      @include center;
+    }
+
+    button {
+      cursor: pointer;
+    }
   }
 
   h1 {
+    text-align: center;
     font: 900 3em $mainFont;
+    color: $secondary;
   }
 
   button {
-    background: $secondary;
-
     width: 100px;
     height: 100px;
     margin: 0px 10px;
     border: none;
     outline: none;
-
+    
     &:nth-child(1) {
+      background: $secondary;
       border-radius: 50%;
     }
-
+    
     &:nth-child(2) {
-      border-radius: 10px;
+      background: $third;
+      border-radius: 3px;
     }
-
+    
     &:nth-child(3) {
-      border-radius: 10px;
+      background: $fourth;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     }
-
+    
     &:nth-child(4) {
-      border-radius: 10px;
+      background: $fifth;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     }
+  }
+
+  picture {
+    width: 500px;
+    height: 500px;
+    border: 5px solid $secondary;
+    border-radius: 50%;
+
+    display: block;
   }
 }
 
@@ -98,7 +150,18 @@ section#join {
     font: bold 3em $mainFont;
   }
 
-  button {
-    @include primaryButton;
+  p {
+    text-align: center;
+    width: 55%;
+    margin: 25px 0px;
+  }
+
+  > div div {
+    @include center;
+    
+    button {
+      width: 50%;
+      @include primaryButton;
+    }
   }
 }

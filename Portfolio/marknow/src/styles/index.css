@@ -36,7 +36,7 @@ button.primary a {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 button.secondary {
@@ -622,6 +622,12 @@ section#introAbout p {
   width: 100%;
 }
 
+section#cases {
+  width: 100%;
+}
+section#cases > div {
+  width: 100%;
+}
 section#cases .case {
   display: flex;
   flex-flow: row wrap;
@@ -631,7 +637,7 @@ section#cases .case {
 }
 section#cases .case div {
   width: 50%;
-  height: 90%;
+  height: 300px;
 }
 section#cases .case .window {
   background: white;
@@ -667,7 +673,7 @@ section#cases button a {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 section#top {
@@ -675,20 +681,55 @@ section#top {
   color: white;
   width: 100%;
   height: 700px;
+  padding: 30px 0px;
 }
 section#top > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+section#top .profInfo {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
+}
+section#top .profInfo div {
+  width: 40%;
   height: 400px;
 }
+section#top .profInfo .profDesc {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+section#top .profInfo .profDesc .buttonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#top .profInfo .imgProf {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#top .profInfo button {
+  cursor: pointer;
+}
 section#top h1 {
+  text-align: center;
   font: 900 3em system-ui, sans-serif;
+  color: #EF6F6C;
 }
 section#top button {
-  background: #EF6F6C;
   width: 100px;
   height: 100px;
   margin: 0px 10px;
@@ -696,16 +737,27 @@ section#top button {
   outline: none;
 }
 section#top button:nth-child(1) {
+  background: #EF6F6C;
   border-radius: 50%;
 }
 section#top button:nth-child(2) {
-  border-radius: 10px;
+  background: #5AD2F4;
+  border-radius: 3px;
 }
 section#top button:nth-child(3) {
-  border-radius: 10px;
+  background: #7FB685;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 section#top button:nth-child(4) {
-  border-radius: 10px;
+  background: #F9C976;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+section#top picture {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #EF6F6C;
+  border-radius: 50%;
+  display: block;
 }
 
 section#join {
@@ -715,7 +767,18 @@ section#join {
 section#join h1 {
   font: bold 3em system-ui, sans-serif;
 }
-section#join button {
+section#join p {
+  text-align: center;
+  width: 55%;
+  margin: 25px 0px;
+}
+section#join > div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#join > div div button {
+  width: 50%;
   background: #EF6F6C;
   box-shadow: 0px 5px black;
   margin: 10px;
@@ -729,14 +792,14 @@ section#join button {
   justify-content: center;
   align-items: center;
 }
-section#join button:hover {
+section#join > div div button:hover {
   box-shadow: 0px 0px black;
 }
-section#join button a {
+section#join > div div button a {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 section#form {
@@ -779,7 +842,7 @@ section#form input[type=submit] a {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 section#form label {
   display: inline-block;
