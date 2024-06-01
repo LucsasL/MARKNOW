@@ -714,12 +714,14 @@ section#top {
   background: #071108;
   color: white;
   width: 100%;
-  height: 700px;
   padding: 30px 0px;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section#top > div {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -728,6 +730,7 @@ section#top > div {
 }
 section#top .profInfo {
   width: 100%;
+  height: 600px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -751,13 +754,26 @@ section#top .profInfo .profDesc .buttonDiv {
   align-items: center;
 }
 section#top .profInfo .imgProf {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url("../img/big-professional-round.jpg");
+  width: 100%;
+  height: 100%;
+  border: 5px solid #EF6F6C;
+  border-radius: 50%;
 }
 section#top .profInfo button {
   cursor: pointer;
+}
+section#top .arrowsNav {
+  position: absolute;
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 1;
+}
+section#top .arrowsNav:nth-child(1) {
+  left: 5%;
+}
+section#top .arrowsNav:nth-child(2) {
+  left: 95%;
 }
 section#top h1 {
   text-align: center;
@@ -786,13 +802,6 @@ section#top button:nth-child(3) {
 section#top button:nth-child(4) {
   background: #F9C976;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-}
-section#top picture {
-  width: 500px;
-  height: 500px;
-  border: 5px solid #EF6F6C;
-  border-radius: 50%;
-  display: block;
 }
 
 section#join {
