@@ -7,7 +7,7 @@ import { palsInfo } from "../../../Utils/data";
 // Importing Images
 import arrowPrev from "../../../icons/back-arrow.svg";
 import arrowNext from "../../../icons/front-arrow.svg";
-// import faceDuck from "../../../img/faceduck.png";
+import faceDuck from "../../../img/faceduckLogo.png";
 import poogle from "../../../img/poogle.webp";
 import rabbit from "../../../img/rabbit.webp";
 import youDude from "../../../img/YouDude.png";
@@ -126,7 +126,7 @@ const Pals = () => {
 
           <div>
             <picture>
-              <img src="../src/img/coffee.jpg" alt="Faceduck" />
+              <img src={faceDuck} alt="Faceduck" />
             </picture>
           </div>
 

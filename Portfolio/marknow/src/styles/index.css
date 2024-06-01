@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -121,7 +123,7 @@ header > div {
   gap: 30px;
 }
 header h1 {
-  font: 900 1.7em system-ui, sans-serif;
+  font: 900 1.7em "Inter", sans-serif;
 }
 
 main {
@@ -147,7 +149,7 @@ section#intro {
   gap: 30px;
 }
 section#intro h1 {
-  font: bold 3em system-ui, sans-serif;
+  font: bold 3em "Inter", sans-serif;
 }
 section#intro .introInfo {
   width: 50%;
@@ -230,7 +232,7 @@ section#showcase .window picture img {
   border-radius: 20px;
 }
 section#showcase span {
-  font: 900 5em system-ui, sans-serif;
+  font: 900 5em "Inter", sans-serif;
 }
 section#showcase span:nth-child(odd) {
   position: absolute;
@@ -365,18 +367,18 @@ section#pals .arrowsNav:nth-child(2) {
   left: 90%;
 }
 section#pals h1 {
-  font: 900 3.4em system-ui, sans-serif;
+  font: 900 3.4em "Inter", sans-serif;
   color: #EF6F6C;
   position: absolute;
   top: 10%;
 }
 section#pals h2 {
   color: #EF6F6C;
-  font: 900 2em system-ui, sans-serif;
+  font: 900 2em "Inter", sans-serif;
   text-transform: uppercase;
 }
 section#pals h2 span {
-  font: normal 0.6em system-ui, sans-serif;
+  font: normal 0.6em "Inter", sans-serif;
 }
 section#pals p {
   width: 50%;
@@ -492,7 +494,7 @@ section#improve {
 }
 section#improve h1,
 section#improve h2 {
-  font: 900 3em system-ui, sans-serif;
+  font: 900 3em "Inter", sans-serif;
   text-align: center;
 }
 section#improve > div {
@@ -577,7 +579,7 @@ footer > div div {
 footer .credit {
   width: 90%;
   border-top: 2px solid white;
-  font: bold 1em system-ui, sans-serif;
+  font: bold 1em "Inter", sans-serif;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -619,7 +621,7 @@ footer .waves {
 section#introAbout {
   background: url("../videos/marknowVideo.gif") no-repeat;
   background-size: cover;
-  backdrop-filter: brigh tness(0.4);
+  filter: brightness(0.4);
   color: white;
   width: 100%;
   height: calc(100vh - 85px);
@@ -633,7 +635,7 @@ section#introAbout > div {
   width: 65%;
 }
 section#introAbout h1 {
-  font: 900 5em system-ui, sans-serif;
+  font: 900 5em "Inter", sans-serif;
 }
 section#introAbout p {
   width: 100%;
@@ -684,11 +686,11 @@ section#cases .case .window .bar {
 }
 section#cases h1 {
   text-align: center;
-  font: bold 3em system-ui, sans-serif;
+  font: bold 3em "Inter", sans-serif;
   margin-bottom: 50px;
 }
 section#cases h2 {
-  font: normal 2.6em system-ui, sans-serif;
+  font: normal 2.6em "Inter", sans-serif;
 }
 section#cases button {
   background: #EF6F6C;
@@ -782,7 +784,7 @@ section#top .arrowsNav:nth-child(2) {
 }
 section#top h1 {
   text-align: center;
-  font: 900 3em system-ui, sans-serif;
+  font: 900 3em "Inter", sans-serif;
   color: #EF6F6C;
 }
 section#top button {
@@ -814,7 +816,7 @@ section#join {
   text-align: center;
 }
 section#join h1 {
-  font: bold 3em system-ui, sans-serif;
+  font: bold 3em "Inter", sans-serif;
 }
 section#join p {
   text-align: center;
@@ -896,7 +898,7 @@ section#form input[type=submit] a {
 section#form label {
   display: inline-block;
   padding-bottom: 15px;
-  font: bold 1em system-ui, sans-serif;
+  font: bold 1em "Inter", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

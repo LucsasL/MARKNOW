@@ -2,7 +2,7 @@
 section#introAbout {
   background: url("../videos/marknowVideo.gif") no-repeat;
   background-size: cover;
-  backdrop-filter: brigh  tness(.4);
+  filter: brightness(.4);
   color: white;
 
   width: 100%;

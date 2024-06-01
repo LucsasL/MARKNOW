@@ -1,5 +1,5 @@
 import poogle from "../../../img/poogle.webp";
-// import faceduck from "../../../img/";
+import faceDuck from "../../../img/faceduckLogo.png";
 
 function Cases() {
   return (
@@ -64,7 +64,7 @@ function Cases() {
                   <picture>
                     <figure>
                       <figcaption>FaceDuck Case</figcaption>
-                      <img src={poogle} alt="FaceDuck Marketing Case" />
+                      <img src={faceDuck} alt="FaceDuck Marketing Case" />
                     </figure>
                   </picture>
                 </div>
