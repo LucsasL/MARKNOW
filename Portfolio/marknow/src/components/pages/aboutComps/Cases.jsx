@@ -1,3 +1,6 @@
+import poogle from "../../../img/poogle.webp";
+// import faceduck from "../../../img/";
+
 function Cases() {
   return (
     <>
@@ -19,7 +22,16 @@ function Cases() {
 
             <div>
               <div className="window">
-                <div className="bar-window"></div>
+                <div className="bar"></div>
+
+                <div>
+                  <picture>
+                    <figure>
+                      <figcaption>Poogle Case</figcaption>
+                      <img src={poogle} alt="Poogle Marketing Case" />
+                    </figure>
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -38,7 +50,16 @@ function Cases() {
 
             <div>
               <div className="window">
-                <div className="bar-window"></div>
+                <div className="bar"></div>
+
+                <div>
+                  <picture>
+                    <figure>
+                      <figcaption>FaceDuck Case</figcaption>
+                      <img src={poogle} alt="FaceDuck Marketing Case" />
+                    </figure>
+                  </picture>
+                </div>
               </div>
             </div>
           </div>

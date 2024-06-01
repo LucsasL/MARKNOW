@@ -13,7 +13,7 @@ section#introAbout {
 
 // Cases Section
 section#cases {
-  width: 100%;
+  width: 90%;
 
   > div {
     width: 100%;
@@ -24,15 +24,27 @@ section#cases {
 
     div {
       width: 40%;
-      height: 300px;
     }
 
     .window {
       background: white;
-      width: 50%;
-      height: 100%;
+      width: 100%;
+      height: 350px;
+      position: relative;
 
-      @include windowBox;
+      @include window;
+
+      div {
+        width: 100%;
+        height: calc(100% - 40px);
+        @include center;
+      }
+
+      .bar {
+        background: $third;
+        width: 100%;
+        height: 40px;
+      }
     }
   }
 
