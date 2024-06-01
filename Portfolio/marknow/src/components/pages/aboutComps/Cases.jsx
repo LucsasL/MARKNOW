@@ -18,6 +18,10 @@ function Cases() {
                 dolorem voluptates eligendi nisi! Impedit, nemo! Esse qui
                 laboriosam voluptate debitis mollitia. Minima, temporibus?
               </p>
+
+              <button>
+                <a href="http://youtube.com">Learn More</a>
+              </button>
             </div>
 
             <div>
@@ -46,6 +50,10 @@ function Cases() {
                 dolorem voluptates eligendi nisi! Impedit, nemo! Esse qui
                 laboriosam voluptate debitis mollitia. Minima, temporibus?
               </p>
+              
+              <button>
+                <a href="http://youtube.com">Learn More</a>
+              </button>
             </div>
 
             <div>
