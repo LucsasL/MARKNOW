@@ -617,6 +617,10 @@ footer .waves {
 }
 
 section#introAbout {
+  background: url("../videos/marknowVideo.gif") no-repeat;
+  background-size: cover;
+  backdrop-filter: brigh tness(0.4);
+  color: white;
   width: 100%;
   height: calc(100vh - 85px);
   margin: 0;

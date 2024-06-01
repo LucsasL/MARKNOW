@@ -1,6 +1,10 @@
 // Intro Section
 section#introAbout {
-  // background: blue;
+  background: url("../videos/marknowVideo.gif") no-repeat;
+  background-size: cover;
+  backdrop-filter: brigh  tness(.4);
+  color: white;
+
   width: 100%;
   height: calc(100vh - 85px);
   margin: 0;
