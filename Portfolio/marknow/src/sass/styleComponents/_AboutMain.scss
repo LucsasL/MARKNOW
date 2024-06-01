@@ -115,11 +115,12 @@ section#top {
     }
     
     .imgProf {
-      background: url("../img/big-professional-round.jpg");
+      background: url("../img/big-professional-round.jpg") no-repeat center;
+      background-size: cover;
 
-      width: 100%;
-      height: 100%;
-      border: 5px solid $secondary;
+      width: 550px;
+      height: 550px;
+      border: 15px solid $secondary;
       border-radius: 50%;
     }
 

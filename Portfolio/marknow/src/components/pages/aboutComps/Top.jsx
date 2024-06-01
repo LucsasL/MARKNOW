@@ -56,7 +56,7 @@ function Top() {
               </div>
             </div>
 
-            <div className="img-prof"></div>
+            <div className="imgProf"></div>
           </div>
         </div>
       </section>
