@@ -23,7 +23,7 @@ section#cases {
     @include spaceAround;
 
     div {
-      width: 50%;
+      width: 40%;
       height: 300px;
     }
 
@@ -31,6 +31,8 @@ section#cases {
       background: white;
       width: 50%;
       height: 100%;
+
+      @include windowBox;
     }
   }
 

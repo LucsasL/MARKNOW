@@ -37,7 +37,7 @@ function Cases() {
             </div>
 
             <div>
-              <div className="window" style={{ boxShadow: "-10px 10px black" }}>
+              <div className="window">
                 <div className="bar-window"></div>
               </div>
             </div>
