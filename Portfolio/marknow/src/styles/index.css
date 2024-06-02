@@ -13,6 +13,7 @@ html, body {
   width: 100%;
   max-width: 100%;
   height: 100%;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -620,7 +621,7 @@ footer .waves {
 section#introAbout {
   background: url("../videos/marknowVideo.gif") no-repeat;
   background-size: cover;
-  filter: brightness(0.4);
+  backdrop-filter: brightness(0.4);
   color: white;
   width: 100%;
   height: calc(100vh - 85px);
@@ -721,12 +722,8 @@ section#top {
   width: 100%;
   padding: 30px 0px;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 section#top > div {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -736,7 +733,7 @@ section#top > div {
 section#top .profCont {
   width: 400%;
   position: relative;
-  left: 0;
+  left: 150%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -745,7 +742,7 @@ section#top .profCont {
   gap: 0;
 }
 section#top .profInfo {
-  width: 50%;
+  width: 90%;
   height: 600px;
   display: flex;
   flex-flow: row nowrap;
@@ -754,7 +751,7 @@ section#top .profInfo {
   gap: 30px;
 }
 section#top .profInfo div {
-  width: 20%;
+  width: 50%;
   height: 400px;
 }
 section#top .profInfo .profDesc {
@@ -779,6 +776,9 @@ section#top .profInfo .imgProf {
 }
 section#top .profInfo button {
   cursor: pointer;
+}
+section#top .profInfo:nth-child(2) {
+  background: blue;
 }
 section#top .arrowsNav {
   position: absolute;

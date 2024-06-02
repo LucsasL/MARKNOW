@@ -99,7 +99,7 @@ function Top() {
             </picture>
           </div>
 
-          <h1 className="bolder center title">
+          <h1 style={{ color: profColor }}>
             Be in the top with the greatest
           </h1>
 
@@ -107,18 +107,30 @@ function Top() {
           {
             profInfo.map(({ profName, quote, profFunction }) => {
               return (
-                <div className="profInfo">
+                <div 
+                  className="profInfo"
+                  key={Math.floor(Math.random() * 100)}
+                >
                   <div className="profDesc">
                     <p>
                       {quote}{profName}{profFunction}
                     </p>
                     <div className="buttonDiv">
-                      <button></button>
-                      <button></button>
-                      <button></button>
-                      <button></button>
+                      <button onClick={() => setPosition(position - 100)}>
+
+                      </button>
+                      <button onClick={() => setPosition(position - 200)}>
+
+                      </button>
+                      <button onClick={() => setPosition(position - 300)}>
+
+                      </button>
+                      <button onClick={() => setPosition(position - 400)}>
+
+                      </button>
                     </div>
                   </div>
+
                   <div
                     className="imgProf"
                     style={{
