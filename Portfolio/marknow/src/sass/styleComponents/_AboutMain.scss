@@ -99,6 +99,8 @@ section#top {
     position: relative;
     left: 150%;
 
+    transition: opacity .5s ease;
+
     @include spaceEvenly;
     gap: 0;
   }
@@ -136,10 +138,6 @@ section#top {
 
     button {
       cursor: pointer;
-    }
-
-    &:nth-child(2) {
-      background: blue;
     }
   }
 

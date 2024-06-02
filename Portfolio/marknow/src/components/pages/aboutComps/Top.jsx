@@ -16,26 +16,26 @@ function Top() {
   const [nextArrOpacity, setNextArrOpacity] = useState("50%");
 
   const changeProf = (Arr) => {
-    if (Arr === "Prev" && position > -300) {
+    if (Arr === "Prev" && position < 150) {
       setPosition(position + 100);
     }
     
-    if (Arr === "Next" && position < 0) {
+    if (Arr === "Next" && position > -150) {
       setPosition(position - 100);
 
     }
 
-    changeProfStyle();
+    changeProfStyle(position);
   }
 
   const arrOpacity = () => {
-    if (position === 0) {
+    if (position === 150) {
       setPrevArrOpacity(0.3);
     } else {
       setPrevArrOpacity(1);
     }
 
-    if (position === -300) {
+    if (position === -150) {
       setNextArrOpacity(0.3);
     } else {
       setNextArrOpacity(1);
@@ -44,24 +44,24 @@ function Top() {
 
   const changeProfStyle = (msg) => {
     switch (msg) {
-      case 0:
+      case 150:
         setProfColor("#EF6F6C");
         setProfShape("50%");
         return;
 
-      case -100:
+      case 50:
         setProfColor("#5AD2F4");
         setProfShape("20px");
         return;
 
-      case -200:
+      case -50:
         setProfColor("#7FB685");
-        setProfShape("50%");
+        setProfShape("70%");
         return;
 
-      case -300:
+      case -150:
         setProfColor("#F9C976");
-        setProfShape("50%");
+        setProfShape("20%");
         return;
 
       default:
@@ -116,16 +116,16 @@ function Top() {
                       {quote}{profName}{profFunction}
                     </p>
                     <div className="buttonDiv">
-                      <button onClick={() => setPosition(position === 0 ? -100 : +100)}>
+                      <button onClick={() => setPosition(150)}>
 
                       </button>
-                      <button onClick={() => setPosition(position - 200)}>
+                      <button onClick={() => setPosition(50)}>
 
                       </button>
-                      <button onClick={() => setPosition(position - 300)}>
+                      <button onClick={() => setPosition(-50)}>
 
                       </button>
-                      <button onClick={() => setPosition(position - 400)}>
+                      <button onClick={() => setPosition(-150)}>
 
                       </button>
                     </div>

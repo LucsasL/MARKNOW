@@ -734,6 +734,7 @@ section#top .profCont {
   width: 400%;
   position: relative;
   left: 150%;
+  transition: opacity 0.5s ease;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -776,9 +777,6 @@ section#top .profInfo .imgProf {
 }
 section#top .profInfo button {
   cursor: pointer;
-}
-section#top .profInfo:nth-child(2) {
-  background: blue;
 }
 section#top .arrowsNav {
   position: absolute;
