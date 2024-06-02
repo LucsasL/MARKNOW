@@ -9,7 +9,7 @@ import arrowNext from "../../../icons/front-arrow.svg";
 import { profInfo } from "../../../Utils/data";
 
 function Top() {
-  const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(150);
   const [profColor, setProfColor] = useState("#EF6F6C");
   const [profShape, setProfShape] = useState("50%");
   const [prevArrOpacity, setPrevArrOpacity] = useState("50%");
@@ -103,7 +103,7 @@ function Top() {
             Be in the top with the greatest
           </h1>
 
-          <div className="profCont">
+          <div className="profCont" style={{ left: (position + "%") }}>
           {
             profInfo.map(({ profName, quote, profFunction }) => {
               return (
@@ -116,7 +116,7 @@ function Top() {
                       {quote}{profName}{profFunction}
                     </p>
                     <div className="buttonDiv">
-                      <button onClick={() => setPosition(position - 100)}>
+                      <button onClick={() => setPosition(position === 0 ? -100 : +100)}>
 
                       </button>
                       <button onClick={() => setPosition(position - 200)}>
