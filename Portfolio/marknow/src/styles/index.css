@@ -13,7 +13,6 @@ html, body {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -143,7 +142,7 @@ main section {
 
 section#intro {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -262,7 +261,7 @@ section#about {
 }
 section#about > div {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -410,7 +409,7 @@ section#services {
 }
 section#services > div {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -447,7 +446,7 @@ section#services h1 {
 section#reach {
   height: 900px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -650,7 +649,7 @@ section#cases > div {
 section#cases .case {
   height: 500px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -727,24 +726,29 @@ section#top {
   align-items: center;
 }
 section#top > div {
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
 }
+section#top .profCont {
+  width: 400vw;
+  position: relative;
+  left: 0;
+}
 section#top .profInfo {
-  width: 100%;
+  width: 100vw;
   height: 600px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
 }
 section#top .profInfo div {
-  width: 40%;
+  width: 50%;
   height: 400px;
 }
 section#top .profInfo .profDesc {

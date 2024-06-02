@@ -91,20 +91,26 @@ section#top {
   @include center;
 
   > div {
-    width: 80%;
+    width: 100%;
     height: 100%;
 
     @include verticalFlex;
   }
+  
+  .profCont {
+    width: 400vw;
+    position: relative;
+    left: 0;
+  }
 
   .profInfo {
-    width: 100%;
+    width: 100vw;
     height: 600px;
 
     @include spaceAround;
 
     div {
-      width: 40%;
+      width: 50%;
       height: 400px;
     }
 

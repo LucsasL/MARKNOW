@@ -14,7 +14,7 @@ import youDude from "../../../img/YouDude.png";
 
 const Pals = () => {
   const [position, setPosition] = useState(0);
-  const [color, setColor] = useState("$secondary");
+  const [color, setColor] = useState("#EF6F6C");
   const [prevArrOpacity, setPrevArrOpacity] = useState(1);
   const [nextArrOpacity, setNextArrOpacity] = useState(1);
 
@@ -45,19 +45,19 @@ const Pals = () => {
   const changeColor = (msg) => {
     switch (msg) {
       case 0:
-        setColor("$secondary");
+        setColor("#EF6F6C");
         return;
 
       case -100:
-        setColor("$third");
+        setColor("#5AD2F4");
         return;
 
       case -200:
-        setColor("$fourth");
+        setColor("#7FB685");
         return;
 
       case -300:
-        setColor("$fifth");
+        setColor("#F9C976");
         return;
 
       default:
