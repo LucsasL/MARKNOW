@@ -734,12 +734,18 @@ section#top > div {
   align-items: center;
 }
 section#top .profCont {
-  width: 400vw;
+  width: 400%;
   position: relative;
   left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  gap: 0;
 }
 section#top .profInfo {
-  width: 100vw;
+  width: 50%;
   height: 600px;
   display: flex;
   flex-flow: row nowrap;
@@ -748,7 +754,7 @@ section#top .profInfo {
   gap: 30px;
 }
 section#top .profInfo div {
-  width: 50%;
+  width: 20%;
   height: 400px;
 }
 section#top .profInfo .profDesc {

@@ -98,19 +98,22 @@ section#top {
   }
   
   .profCont {
-    width: 400vw;
+    width: 400%;
     position: relative;
     left: 0;
+
+    @include spaceEvenly;
+    gap: 0;
   }
 
   .profInfo {
-    width: 100vw;
+    width: 50%;
     height: 600px;
 
     @include spaceAround;
 
     div {
-      width: 50%;
+      width: 20%;
       height: 400px;
     }
 
