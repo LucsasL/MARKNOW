@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/marknow/static/css/main.cff6517c.css",
+    "main.js": "/marknow/static/js/main.ff70eef4.js",
+    "static/media/marknowVideo.gif": "/marknow/static/media/marknowVideo.8dba88a83e7d829ad1c4.gif",
+    "static/media/Professional-pentagono.jpg": "/marknow/static/media/Professional-pentagono.9bace1ef038e7d4be7b3.jpg",
+    "static/media/burger.jpg": "/marknow/static/media/burger.6c2a78b06809fb8e120f.jpg",
+    "static/media/coffee.jpg": "/marknow/static/media/coffee.b350eee0e9f4ba77237c.jpg",
+    "static/media/professional-square.jpg": "/marknow/static/media/professional-square.d0baf1291ecb71373331.jpg",
+    "static/media/professional-round.jpg": "/marknow/static/media/professional-round.7095723e4d5103b3b10c.jpg",
+    "static/media/introImg.jpg": "/marknow/static/media/introImg.56f8bdb664763a0d0e0d.jpg",
+    "static/media/professional-triangle.jpg": "/marknow/static/media/professional-triangle.2c31f6c3928176e51722.jpg",
+    "static/media/shoes.jpg": "/marknow/static/media/shoes.9d44e2917f369758f4a6.jpg",
+    "static/media/earth.png": "/marknow/static/media/earth.260546c30f17a9f58f0d.png",
+    "static/media/poogle.webp": "/marknow/static/media/poogle.6679a803436dd4fe327d.webp",
+    "static/media/waves.svg": "/marknow/static/media/waves.ddbcd225fc08007e39f03538b4549244.svg",
+    "static/media/rabbit.webp": "/marknow/static/media/rabbit.1ac7946a6d57d01bce57.webp",
+    "static/media/front-arrow.svg": "/marknow/static/media/front-arrow.e93062ed2c40b3e10d3138e9bd76a53f.svg",
+    "static/media/back-arrow.svg": "/marknow/static/media/back-arrow.8ca7cd5c6a254da422dcfb1ec11bba3f.svg",
+    "index.html": "/marknow/index.html",
+    "main.cff6517c.css.map": "/marknow/static/css/main.cff6517c.css.map",
+    "main.ff70eef4.js.map": "/marknow/static/js/main.ff70eef4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cff6517c.css",
+    "static/js/main.ff70eef4.js"
+  ]
+}
