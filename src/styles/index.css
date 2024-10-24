@@ -106,21 +106,24 @@ figcaption {
 }
 
 header {
-  background: #5AD2F4;
-  width: 100%;
-  height: 85px;
-  border-bottom: 2px solid #071108;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 120px;
 }
 header > div {
-  width: 80%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 30px;
+  background: #5AD2F4;
+  box-shadow: -3px 3px 0px #071108;
+  width: 90%;
+  height: 85px;
+  border: 2px solid #071108;
+  border-radius: 50px;
 }
 header h1 {
   font: 900 1.7em "Inter", sans-serif;
