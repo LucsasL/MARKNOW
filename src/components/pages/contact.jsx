@@ -8,7 +8,12 @@ function Contact() {
   return (
     <main>
       <div>
+
         <section id="form">
+          <h1>
+            Contact
+          </h1>
+          
           <div>
             <form method="GET">
               <fieldset>
@@ -66,6 +71,10 @@ Project Link: https://github.com/lucsasl`
                 </div>
               </fieldset>
             </form>
+
+            <div className="imgContact">
+              
+            </div>
           </div>
         </section>
       </div>

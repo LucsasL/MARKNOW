@@ -43,16 +43,16 @@ const Reach = () => {
     renderer.setSize(window.innerWidth, 1000);
     renderer.setPixelRatio(maxPixelRatio);
 
-    const bgCubeMap = cubeTextureLoader.load([
-      "px.png",
-      "nx.png",
-      "py.png",
-      "ny.png",
-      "pz.png",
-      "nz.png",
-    ]);
+    // const bgCubeMap = cubeTextureLoader.load([
+    //   "px.png",
+    //   "nx.png",
+    //   "py.png",
+    //   "ny.png",
+    //   "pz.png",
+    //   "nz.png",
+    // ]);
 
-    scene.background = bgCubeMap;
+    // scene.background = bgCubeMap;
 
     // Initializing OrbitControls
     const controls = new OrbitControls(camera, canvas.current);
