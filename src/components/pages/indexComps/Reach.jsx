@@ -9,7 +9,7 @@ const Reach = () => {
   const scene = new THREE.Scene();
 
   // Main Model Variables
-  const aspectRatio = window.innerWidth / window.innerHeight;
+  const aspectRatio = window.innerWidth / 1000;
   const maxPixelRatio = Math.min(window.devicePixelRatio, 2);
 
   // Refs
@@ -21,6 +21,10 @@ const Reach = () => {
     const geo = new THREE.SphereGeometry(1, 32, 32);
     const mat = new THREE.MeshBasicMaterial({ color: "blue" });
     const mesh = new THREE.Mesh(geo, mat);
+
+    // Texture
+    const cubeTextureLoader = new THREE.CubeTextureLoader();
+    cubeTextureLoader.setPath("../../../canvas/textures/cubeMap/");
 
     scene.add(mesh);
 
@@ -36,8 +40,19 @@ const Reach = () => {
       canvas: canvas.current,
       antialias: true,
     });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, 1000);
     renderer.setPixelRatio(maxPixelRatio);
+
+    const bgCubeMap = cubeTextureLoader.load([
+      "px.png",
+      "nx.png",
+      "py.png",
+      "ny.png",
+      "pz.png",
+      "nz.png",
+    ]);
+
+    scene.background = bgCubeMap;
 
     // Initializing OrbitControls
     const controls = new OrbitControls(camera, canvas.current);
@@ -46,9 +61,9 @@ const Reach = () => {
     // Resize Event Handler
     window.addEventListener("resize", () => {
       console.log("Screen resized.");
-      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.aspect = window.innerWidth / 1000;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(window.innerWidth, 1000);
     });
 
     // Creating a render loop

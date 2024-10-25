@@ -15,11 +15,14 @@ import rabbit from "../../../img/rabbit.webp";
 import youDude from "../../../img/YouDude.png";
 
 const Pals = () => {
+  // States
   const [position, setPosition] = useState(0);
   const [color, setColor] = useState("#EF6F6C");
   // const [prevArrOpacity, setPrevArrOpacity] = useState(1);
   // const [nextArrOpacity, setNextArrOpacity] = useState(1);
-
+  
+  // Refs
+  const palsLogo = useRef([]);
   const palsTitle = useRef(null);
   const palsCompCont = useRef(null);
 
@@ -41,6 +44,11 @@ const Pals = () => {
   });
 
   const scrollMsg = (arr) => {
+    // palsLogo.current.forEach(c => {
+    //   c.classList.remove("palsCont");
+    // });
+    console.log(palsLogo.current);
+
     if (arr === "Prev" && position < 0) {
       setPosition(position + 100);
     } else if (arr === "Next" && position > -300) {
@@ -51,18 +59,22 @@ const Pals = () => {
       switch (position - 100) {
         case 0:
           setColor("#EF6F6C");
+          // palsLogo.current[0].classList.add("palsCont");
           return;
   
         case -100:
           setColor("#5AD2F4");
+          // palsLogo.current[1].classList.add("palsCont");
           return;
           
-        case -200:
+          case -200:
           setColor("#7FB685");
+          // palsLogo.current[2].classList.add("palsCont");
           return;
-  
-        case -300:
+          
+          case -300:
           setColor("#F9C976");
+          // palsLogo.current[3].classList.add("palsCont");
           return;
   
         default:
@@ -165,25 +177,25 @@ const Pals = () => {
         </div>
 
         <div className="palsComp" style={{ background: color }} ref={palsCompCont}>
-          <div>
+          <div className="palsCont" ref={palsLogo.current[0]}>
             <picture>
               <img src={poogle} alt="Poogle" />
             </picture>
           </div>
 
-          <div>
+          <div ref={palsLogo.current[1]}>
             <picture>
               <img src={faceDuck} alt="Faceduck" />
             </picture>
           </div>
 
-          <div>
+          <div ref={palsLogo.current[2]}>
             <picture>
               <img src={rabbit} alt="Rabbit" />
             </picture>
           </div>
 
-          <div>
+          <div ref={palsLogo.current[3]}>
             <picture>
               <img src={youDude} alt="YouCook" />
             </picture>

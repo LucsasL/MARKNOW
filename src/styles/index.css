@@ -429,7 +429,8 @@ section#pals .palsComp {
   background: #EF6F6C;
   box-shadow: 0px 10px black;
   width: 80%;
-  height: 100px;
+  height: 120px;
+  padding: 10px;
   border: 3px solid black;
   border-radius: 20px;
   position: absolute;
@@ -437,6 +438,7 @@ section#pals .palsComp {
 }
 section#pals .palsComp > div {
   height: 100%;
+  padding: 10px;
   display: flex;
   align-items: center;
 }
@@ -445,6 +447,12 @@ section#pals .palsComp > div img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section#pals .palsComp .palsCont {
+  box-shadow: -3px 3px 0px #071108;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: all 1s linear;
 }
 
 section#services {
@@ -515,6 +523,10 @@ section#reach {
   height: 1000px;
   margin: 0;
   position: relative;
+}
+section#reach canvas {
+  width: 100%;
+  height: 100%;
 }
 
 section#improve {
