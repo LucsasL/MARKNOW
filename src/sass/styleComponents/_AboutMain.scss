@@ -113,17 +113,19 @@ section#top {
   }
 
   .profInfo {
-    width: 90%;
-    height: 600px;
+    width: 80%;
+    height: 700px;
 
-    @include spaceAround;
+    @include center;
 
     div {
-      width: 50%;
+      width: 35%;
       height: 400px;
     }
 
     .profDesc {
+      width: 40%;
+      height: 70%;
       @include verticalFlex;
       
       .buttonDiv {
@@ -133,15 +135,41 @@ section#top {
       }
     }
     
+    .profBorder2 {
+      @include center;
+
+      width: 575px;
+      height: 595px;
+      padding: 20px;
+      clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%)
+    }
+
+    .profBorder3 {
+      @include center;
+
+      width: 575px;
+      height: 595px;
+      padding: 20px;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+
     .imgProf {
       width: 550px;
       height: 550px;
-      border: 15px solid $secondary;
-      border-radius: 50%;
 
       transition-property: border;
       transition-duration: 2.5s;
       transition-timing-function: ease;
+    }
+
+    .profHeader {
+      text-align: center;
+      font: 900 2.5em $mainFont;
+      text-transform: uppercase;
+    }
+    
+    .profHeader span {
+      font: bold .8em $mainFont;
     }
 
     button {

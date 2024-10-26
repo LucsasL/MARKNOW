@@ -835,19 +835,19 @@ section#top .profCont {
   gap: 0;
 }
 section#top .profInfo {
-  width: 90%;
-  height: 600px;
+  width: 80%;
+  height: 700px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 section#top .profInfo div {
-  width: 50%;
+  width: 35%;
   height: 400px;
 }
 section#top .profInfo .profDesc {
+  width: 40%;
+  height: 70%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -859,14 +859,38 @@ section#top .profInfo .profDesc .buttonDiv {
   justify-content: center;
   align-items: center;
 }
+section#top .profInfo .profBorder2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 575px;
+  height: 595px;
+  padding: 20px;
+  clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+}
+section#top .profInfo .profBorder3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 575px;
+  height: 595px;
+  padding: 20px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
 section#top .profInfo .imgProf {
   width: 550px;
   height: 550px;
-  border: 15px solid #EF6F6C;
-  border-radius: 50%;
   transition-property: border;
   transition-duration: 2.5s;
   transition-timing-function: ease;
+}
+section#top .profInfo .profHeader {
+  text-align: center;
+  font: 900 2.5em "Inter", sans-serif;
+  text-transform: uppercase;
+}
+section#top .profInfo .profHeader span {
+  font: bold 0.8em "Inter", sans-serif;
 }
 section#top .profInfo button {
   cursor: pointer;

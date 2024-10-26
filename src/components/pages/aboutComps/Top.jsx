@@ -27,16 +27,14 @@ function Top() {
     if (Arr === "Prev" && position < 150) {
       setPosition(position + 100);
     }
-    
+
     if (Arr === "Next" && position > -150) {
       setPosition(position - 100);
-
     }
 
     changeProfStyle(position, Arr);
-  }
+  };
 
-  
   const changeProfStyle = (msg, arr) => {
     if (arr === "Next") {
       switch (msg - 100) {
@@ -44,24 +42,24 @@ function Top() {
           setProfColor("#EF6F6C");
           setProfShape("50%");
           return;
-  
+
         case 50:
           setProfColor("#5AD2F4");
           setProfShape("20px");
           return;
-          
+
         case -50:
           setProfColor("#7FB685");
           setProfShape("clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%)");
           return;
-          
+
         case -150:
           setProfColor("#F9C976");
           setProfShape(
             "clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"
           );
           return;
-          
+
         default:
           return;
       }
@@ -77,25 +75,24 @@ function Top() {
         setProfColor("#5AD2F4");
         setProfShape("20px");
         return;
-        
+
       case -50:
         setProfColor("#7FB685");
         setProfShape("clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%)");
         return;
-        
+
       case -150:
         setProfColor("#F9C976");
         setProfShape(
           "clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"
         );
         return;
-        
+
       default:
         return;
     }
-  }
-  
-          
+  };
+
   // const arrOpacity = () => {
   //   if (position === 150) {
   //     setPrevArrOpacity(0.3);
@@ -140,13 +137,10 @@ function Top() {
             </picture>
           </div>
 
-          <h1 style={{ color: profColor }}>
-            BE IN THE TOP WITH THE GREATEST
-          </h1>
+          <h1 style={{ color: profColor }}>BE IN THE TOP WITH THE GREATEST</h1>
 
-          <div className="profCont" style={{ left: (position + "%") }}>
-          {
-            profInfo.map(({ profName, quote, profFunction }, index) => {
+          <div className="profCont" style={{ left: position + "%" }}>
+            {profInfo.map(({ profName, quote, profFunction }, index) => {
               return (
                 <div
                   className="profInfo"
@@ -154,11 +148,9 @@ function Top() {
                   style={{ position: "relative", left: `${0}%` }}
                 >
                   <div className="profDesc">
-                    <p>
-                      {quote}
-                    </p>
+                    <p>{quote}</p>
 
-                    <h2>
+                    <h2 className="profHeader" style={{ color: profColor }}>
                       {profName} <br />
                       <span>{profFunction}</span>
                     </h2>
@@ -170,37 +162,41 @@ function Top() {
                     </div>
                   </div>
 
-                  {
-                    index < 2 ? (
+                  {index < 2 ? (
+                    <div
+                      className="imgProf"
+                      style={{
+                        border: `15px solid ${profColor}`,
+                        borderRadius: profShape,
+                      }}
+                    >
+                      <picture>
+                        <img src={profs[index]} alt="Professional" />
+                      </picture>
+                    </div>
+                  ) : (
+                    <div
+                      className={`profBorder${index}`}
+                      style={{
+                        background: profColor,
+                        position: "relative",
+                      }}
+                      >
                       <div
                         className="imgProf"
                         style={{
-                          border: `15px solid ${profColor}`,
-                          borderRadius: profShape,
+                          position: "relative"
                         }}
                       >
                         <picture>
                           <img src={profs[index]} alt="Professional" />
                         </picture>
                       </div>
-                    ) : (
-                      <div
-                        className="imgProf"
-                        style={{
-                          border: `15px solid ${profColor}`,
-                          clipPath: profShape,
-                        }}
-                      >
-                        <picture>
-                          <img src={profs[index]} alt="Professional" />
-                        </picture>
-                      </div>
-                    )
-                  }
+                    </div>
+                  )}
                 </div>
               );
-              })
-            }
+            })}
           </div>
         </div>
       </section>
