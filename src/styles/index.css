@@ -114,6 +114,7 @@ header {
   align-items: center;
   width: 100%;
   height: 270px;
+  position: relative;
 }
 header > div {
   display: flex;
@@ -122,11 +123,14 @@ header > div {
   align-items: center;
   gap: 30px;
   background: #5AD2F4;
-  box-shadow: -3px 3px 0px #071108;
+  box-shadow: none;
   width: 90%;
   height: 130px;
   border: 2px solid #071108;
   border-radius: 50px;
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 header .headerNav {
   display: none;
@@ -527,6 +531,7 @@ section#reach {
 section#reach canvas {
   width: 100%;
   height: 100%;
+  box-shadow: 0px 0px 50px 2px #020307;
 }
 
 section#improve {

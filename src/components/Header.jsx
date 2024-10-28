@@ -1,15 +1,55 @@
+// React Import
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  // States
+  const [headerStyle, setHeaderStyle] = useState({
+    boxShadow: "-8px 8px 0px #071108",
+    margin: "0"
+  });
+
+  // Refs
+  const logoDiv = useRef();
+
+  // Animations and re-render
+  useEffect(() => {
+    function headerShadow() {
+      if (window.scrollY <= 10) {
+        setHeaderStyle({
+          boxShadow: "-3px 3px 0px #071108",
+          margin: "0"
+        });
+      }
+      
+      if (window.scrollY > 10) {
+        setHeaderStyle({
+          boxShadow: "none",
+          margin: `10px 10px 0 0`
+        });
+      }
+
+      window.requestAnimationFrame(headerShadow);
+    }
+
+    headerShadow();
+    
+  }, [logoDiv]);
+
   return (
     <>
       <header>
-        <div>
-          <div>
+        <div
+          style={{
+            boxShadow: headerStyle.boxShadow,
+            margin: headerStyle.margin
+          }}
+        >
+          <div ref={logoDiv}>
             <h1>MARKNOW</h1>
           </div>
 
-          <div clasName="headerNav">
+          <div className="headerNav">
             <ul>
               <li>
                 <NavLink to="/">HOME</NavLink>
@@ -32,6 +72,6 @@ const Header = () => {
       </header>
     </>
   );
-}
+};
 
 export default Header;
