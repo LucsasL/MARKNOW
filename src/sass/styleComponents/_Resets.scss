@@ -57,6 +57,10 @@ ul {
 a {
   color: $dark;
   text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 input, textarea {

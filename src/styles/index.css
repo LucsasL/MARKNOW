@@ -88,6 +88,9 @@ a {
   color: #071108;
   text-decoration: none;
 }
+a:hover {
+  color: #EBBAB9;
+}
 
 input, textarea {
   padding: 12px 20px;
@@ -110,20 +113,23 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 120px;
+  height: 270px;
 }
 header > div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
   background: #5AD2F4;
   box-shadow: -3px 3px 0px #071108;
   width: 90%;
-  height: 85px;
+  height: 130px;
   border: 2px solid #071108;
   border-radius: 50px;
+}
+header .headerNav {
+  display: none;
 }
 header h1 {
   font: 900 1.7em "Inter", sans-serif;
@@ -148,7 +154,7 @@ section#intro {
   height: calc(100vh - 85px);
   margin: 0;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -163,7 +169,7 @@ section#intro picture, section#intro img {
   border-radius: 5px;
 }
 section#intro .introInfo {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 section#intro .introInfo div {
@@ -171,7 +177,7 @@ section#intro .introInfo div {
   justify-content: flex-start;
 }
 section#intro .imgDiv {
-  width: 40%;
+  width: 100%;
   height: auto;
   border: 5px solid #071108;
   border-radius: 10px;
@@ -202,13 +208,14 @@ section#intro button.primary a {
 
 section#showcase {
   position: relative;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 section#showcase .window {
-  width: 500px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   position: relative;
   background: white;
   box-shadow: -15px 15px black;
@@ -234,13 +241,13 @@ section#showcase .window .content {
   align-items: center;
 }
 section#showcase .window.big {
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: 300px;
 }
 section#showcase .window.small1 {
   position: absolute;
-  top: 65%;
-  left: -15%;
+  top: 55%;
+  left: -30%;
 }
 section#showcase .window.small1 .bar {
   background: #F9C976;
@@ -251,7 +258,7 @@ section#showcase .window.small1 picture {
 section#showcase .window.small2 {
   box-shadow: 15px 15px black;
   position: absolute;
-  top: -15%;
+  top: 10%;
   left: 75%;
 }
 section#showcase .window.small2 .bar {
@@ -267,18 +274,18 @@ section#showcase .window picture img {
   border-radius: 20px;
 }
 section#showcase span {
-  font: 900 5em "Inter", sans-serif;
+  font: 900 3em "Inter", sans-serif;
 }
 section#showcase span:nth-child(odd) {
   position: absolute;
-  top: 0;
-  left: -10%;
+  top: 100%;
+  left: -30%;
 }
 section#showcase span:nth-child(even) {
   text-align: right;
   position: absolute;
-  right: -10%;
-  bottom: 5%;
+  right: -30%;
+  bottom: -47%;
 }
 section#showcase span:nth-child(2) {
   color: transparent;
@@ -290,13 +297,6 @@ section#showcase span:nth-child(3) {
   -webkit-text-stroke: 2px #071108;
   z-index: 1;
 }
-section#showcase .mouse {
-  background: blue;
-  width: 100px;
-  height: 100px;
-  border: 5px solid black;
-  position: absolute;
-}
 
 section#about {
   width: 85%;
@@ -304,7 +304,7 @@ section#about {
 }
 section#about > div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -357,7 +357,7 @@ section#pals {
   background: #071108;
   color: white;
   width: 100%;
-  height: 600px;
+  height: 1050px;
   margin: 0;
   text-align: center;
   position: relative;
@@ -403,10 +403,10 @@ section#pals .arrowsNav {
   z-index: 1;
 }
 section#pals .arrowsNav:nth-child(1) {
-  left: 10%;
+  left: 5%;
 }
 section#pals .arrowsNav:nth-child(2) {
-  left: 90%;
+  left: 85%;
 }
 section#pals h1 {
   font: 900 3.4em "Inter", sans-serif;
@@ -460,7 +460,7 @@ section#services {
 }
 section#services > div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -532,12 +532,14 @@ section#reach canvas {
 section#improve {
   background: #5AD2F4;
   width: 100%;
-  height: 1100px;
+  height: 1700px;
+  padding-top: 200px;
   margin: 0px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: start;
 }
 section#improve h1,
 section#improve h2 {
@@ -545,7 +547,7 @@ section#improve h2 {
   text-align: center;
 }
 section#improve > div {
-  width: 70%;
+  width: 90%;
   height: 60%;
   display: grid;
   grid-template-columns: repeat(3, minmax(1fr, 100%));
@@ -560,7 +562,6 @@ section#improve > div div {
 }
 section#improve > div > div:nth-child(1) {
   background: #F9C976;
-  grid-row: 1/span 2;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -568,12 +569,10 @@ section#improve > div > div:nth-child(1) {
 }
 section#improve > div > div:nth-child(1) h1 {
   font-size: 4em;
-  transform: rotate(-90deg);
   width: 100%;
 }
 section#improve > div > div:nth-child(2) {
   background: #EBBAB9;
-  grid-column: 2/span 3;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -588,12 +587,12 @@ section#improve > div > div:nth-child(3) {
 section#improve > div > div:nth-child(4) {
   background: #F9C976;
   display: grid;
-  grid-template-columns: repeat(2, minmax(1fr, 100%));
-  grid-template-rows: repeat(2, minmax(1fr, 100%));
+  grid-template-columns: repeat(1, minmax(1fr, 100%));
+  grid-template-rows: repeat(1, minmax(1fr, 100%));
 }
 section#improve .waves {
   position: absolute;
-  top: -19.5%;
+  top: -13.5%;
 }
 section#improve .primary {
   background: #EF6F6C;
@@ -635,7 +634,6 @@ footer {
   background: #071108;
   color: white;
   width: 100%;
-  height: 420px;
   padding: 30px;
   position: relative;
   bottom: 0;
@@ -649,7 +647,7 @@ footer > div {
   width: 80%;
   z-index: 1;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
@@ -661,14 +659,11 @@ footer > div div {
 footer .credit {
   width: 90%;
   border-top: 2px solid white;
+  text-align: center;
   font: bold 1em "Inter", sans-serif;
-  position: absolute;
-  bottom: 0;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 footer ul li {
   display: block;
@@ -698,7 +693,7 @@ footer input[type=submit] {
 }
 footer .waves {
   position: absolute;
-  top: -51%;
+  top: -25%;
 }
 
 section#introAbout {
@@ -743,7 +738,7 @@ section#cases > div {
 section#cases .case {
   height: 500px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -1002,7 +997,7 @@ section#form h1 {
 }
 section#form > div {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -1058,6 +1053,269 @@ section#form label {
   display: inline-block;
   padding: 15px 10px;
   font: bold 1em "Inter", sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 120px;
+  }
+  header > div {
+    height: 85px;
+  }
+  header .headerNav {
+    display: block;
+  }
+  section#intro {
+    height: calc(100vh - 85px);
+    margin: 0;
+  }
+  section#intro h1 {
+    font: bold 3em "Inter", sans-serif;
+  }
+  section#intro .introInfo {
+    width: 50%;
+    height: auto;
+  }
+  section#intro .imgDiv {
+    width: 40%;
+    height: auto;
+    border: 5px solid #071108;
+    border-radius: 10px;
+  }
+  section#showcase {
+    height: auto;
+  }
+  section#showcase .window {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background: white;
+    box-shadow: -15px 15px black;
+    margin: 20px;
+    border: 2px solid #071108;
+  }
+  section#showcase .window .bar {
+    height: 30px;
+    border-bottom: 1px solid #071108;
+  }
+  section#showcase .window .bar {
+    background: #5AD2F4;
+    height: 45px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  section#showcase .window .content {
+    height: calc(100% - 45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#showcase .window.big {
+    width: 700px;
+    height: 500px;
+  }
+  section#showcase .window.small1 {
+    position: absolute;
+    top: 65%;
+    left: -15%;
+  }
+  section#showcase .window.small1 .bar {
+    background: #F9C976;
+  }
+  section#showcase .window.small1 picture {
+    width: 40%;
+  }
+  section#showcase .window.small2 {
+    box-shadow: 15px 15px black;
+    position: absolute;
+    top: -15%;
+    left: 75%;
+  }
+  section#showcase .window.small2 .bar {
+    background: #7FB685;
+  }
+  section#showcase .window.small2 picture {
+    width: 40%;
+  }
+  section#showcase .window picture {
+    width: 50%;
+  }
+  section#showcase .window picture img {
+    border-radius: 20px;
+  }
+  section#showcase span {
+    font: 900 5em "Inter", sans-serif;
+  }
+  section#showcase span:nth-child(odd) {
+    position: absolute;
+    top: 0;
+    left: -10%;
+  }
+  section#showcase span:nth-child(even) {
+    text-align: right;
+    position: absolute;
+    right: -10%;
+    bottom: 5%;
+  }
+  section#showcase span:nth-child(2) {
+    color: transparent;
+    -webkit-text-stroke: 2px #071108;
+    z-index: 1;
+  }
+  section#showcase span:nth-child(3) {
+    color: transparent;
+    -webkit-text-stroke: 2px #071108;
+    z-index: 1;
+  }
+  section#showcase .mouse {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    position: absolute;
+  }
+  section#pals {
+    height: 600px;
+  }
+  section#pals .arrowsNav {
+    position: absolute;
+    font-size: 3em;
+    cursor: pointer;
+    z-index: 1;
+  }
+  section#pals .arrowsNav:nth-child(1) {
+    left: 10%;
+  }
+  section#pals .arrowsNav:nth-child(2) {
+    left: 90%;
+  }
+  section#improve {
+    width: 100%;
+    height: 1100px;
+    padding-top: 0;
+    margin: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#improve h1,
+  section#improve h2 {
+    font: 900 3em "Inter", sans-serif;
+    text-align: center;
+  }
+  section#improve > div {
+    width: 70%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1fr, 100%));
+    grid-template-rows: repeat(2, minmax(1fr, 100%));
+  }
+  section#improve > div div {
+    box-shadow: -10px 10px #071108;
+    padding: 20px;
+    border: 4px solid #071108;
+    border-radius: 20px;
+    margin: 20px;
+  }
+  section#improve > div > div:nth-child(1) {
+    background: #F9C976;
+    grid-row: 1/span 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section#improve > div > div:nth-child(1) h1 {
+    font-size: 4em;
+    transform: rotate(-90deg);
+    width: 100%;
+  }
+  section#improve > div > div:nth-child(2) {
+    background: #EBBAB9;
+    grid-column: 2/span 3;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section#improve > div > div:nth-child(2) button {
+    width: 100%;
+  }
+  section#improve > div > div:nth-child(3) {
+    background: #7FB685;
+  }
+  section#improve > div > div:nth-child(4) {
+    background: #F9C976;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1fr, 100%));
+    grid-template-rows: repeat(2, minmax(1fr, 100%));
+  }
+  section#improve .waves {
+    position: absolute;
+    top: -19.5%;
+  }
+  section#improve .primary {
+    background: #EF6F6C;
+    box-shadow: 0px 5px black;
+    margin: 10px;
+    border: 2px solid #071108;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+  }
+  section#improve .primary:hover {
+    box-shadow: 0px 0px black;
+  }
+  section#improve .primary a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+  }
+  footer {
+    height: 420px;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer > div {
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  footer > div div {
+    width: 300px;
+    height: 100%;
+  }
+  footer .credit {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  footer .waves {
+    position: absolute;
+    top: -51%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

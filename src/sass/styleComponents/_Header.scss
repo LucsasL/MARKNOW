@@ -3,7 +3,7 @@
 header {
   @include center;
   width: 100%;
-  height: 120px;
+  height: 270px;
   
   > div {
     @include spaceAround;
@@ -12,9 +12,13 @@ header {
     box-shadow: -3px 3px 0px $dark;
     
     width: 90%;
-    height: 85px;
+    height: 130px;
     border: 2px solid $dark;
     border-radius: 50px;
+  }
+
+  .headerNav {
+    display: none;
   }
 
   h1 {

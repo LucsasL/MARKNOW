@@ -5,17 +5,17 @@
   align-items: center;
 }
 
-@mixin spaceBetween {
+@mixin spaceBetween($flexFlow: row wrap) {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: $flexFlow;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
 
-@mixin spaceAround {
+@mixin spaceAround($flexFlow: row wrap) {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: $flexFlow;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
