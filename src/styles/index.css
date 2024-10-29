@@ -1016,14 +1016,14 @@ section#form > div form {
   padding: 20px;
 }
 section#form > div form, section#form > div > div {
-  width: 50%;
+  width: 100%;
 }
 section#form > div .imgContact {
   background: url("../img/coffee.jpg") no-repeat center;
   background-size: cover;
   height: 550px;
   padding: 0;
-  border-radius: 0px 13px 13px 0px;
+  border-radius: 0px 0px 13px 13px;
 }
 section#form input[type=text],
 section#form input[type=email],
@@ -1285,6 +1285,22 @@ section#form label {
     width: 100%;
     height: 100%;
     padding: 12px 20px;
+  }
+  section#form h1 {
+    margin: 30px 0px;
+  }
+  section#form > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    padding: 0;
+    border-radius: 20px;
+  }
+  section#form > div .imgContact {
+    border-radius: 0 13px 13px 0;
   }
   footer {
     height: 420px;

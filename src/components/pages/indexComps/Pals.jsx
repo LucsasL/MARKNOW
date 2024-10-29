@@ -14,10 +14,15 @@ import poogle from "../../../img/poogle.webp";
 import rabbit from "../../../img/rabbit.webp";
 import youDude from "../../../img/YouDude.png";
 
-const Pals = () => {
+const Pals = () => { 
   // States
   const [position, setPosition] = useState(0);
-  const [color, setColor] = useState("#EF6F6C");
+  const [scrollPalObj, setScrollPalObj] = useState({
+    color: "#EF6F6C",
+    position: 0,
+    pal: 0
+  });
+  
   // const [prevArrOpacity, setPrevArrOpacity] = useState(1);
   // const [nextArrOpacity, setNextArrOpacity] = useState(1);
   
@@ -37,16 +42,14 @@ const Pals = () => {
   });
 
   useEffect(() => {
-    palsTitle.current.style.color = {color};
-    palsCompCont.current.style.background = {color};
-    console.log(`Text color changed to: ${color}`);
-    console.log(`Background color changed to: ${color}`);
+    palsTitle.current.style.color = scrollPalObj.color;
+    palsCompCont.current.style.background = scrollPalObj.color;
   });
 
   const scrollMsg = (arr) => {
-    // palsLogo.current.forEach(c => {
-    //   c.classList.remove("palsCont");
-    // });
+    palsLogo.current.forEach(c => {
+      c.classList.remove("palsCont");
+    });
     console.log(palsLogo.current);
 
     if (arr === "Prev" && position < 0) {
@@ -58,22 +61,34 @@ const Pals = () => {
     if (arr === "Next") {
       switch (position - 100) {
         case 0:
-          setColor("#EF6F6C");
+          setScrollPalObj({
+              ...scrollPalObj,
+            color: "#EF6F6C"
+          });
           // palsLogo.current[0].classList.add("palsCont");
           return;
   
         case -100:
-          setColor("#5AD2F4");
+          setScrollPalObj({
+              ...scrollPalObj,
+            color: "#5AD2F4"
+          });
           // palsLogo.current[1].classList.add("palsCont");
           return;
           
           case -200:
-          setColor("#7FB685");
+          setScrollPalObj({
+              ...scrollPalObj,
+            color: "#7FB685"
+          });
           // palsLogo.current[2].classList.add("palsCont");
           return;
           
           case -300:
-          setColor("#F9C976");
+          setScrollPalObj({
+              ...scrollPalObj,
+            color: "#F9C976"
+          });
           // palsLogo.current[3].classList.add("palsCont");
           return;
   
@@ -84,19 +99,31 @@ const Pals = () => {
 
     switch (position + 100) {
       case 0:
-        setColor("#EF6F6C");
+        setScrollPalObj({
+            ...scrollPalObj,
+          color: "#EF6F6C"
+        });
         return;
 
       case -100:
-        setColor("#5AD2F4");
+        setScrollPalObj({
+          ...scrollPalObj,
+          color: "#5AD2F4"
+        });
         return;
         
       case -200:
-        setColor("#7FB685");
+        setScrollPalObj({
+          ...scrollPalObj,
+          color: "#7FB685"
+        });
         return;
 
       case -300:
-        setColor("#F9C976");
+        setScrollPalObj({
+          ...scrollPalObj,
+          color: "#F9C976"
+        });
         return;
 
       default:
@@ -152,7 +179,7 @@ const Pals = () => {
             </picture>
           </div>
 
-          <h1 style={{ color: color }} ref={palsTitle}>OUR CLIENTS APPROVE</h1>
+          <h1 style={{ color: scrollPalObj.color }} ref={palsTitle}>OUR CLIENTS APPROVE</h1>
 
           <div
             className="msg"
@@ -165,7 +192,7 @@ const Pals = () => {
                 return (
                   <div className="palsInfo" key={index} style={{ position: "relative", left: `${0}%` }}>
                     <p>{quote}</p>
-                    <h2 style={{ color: color }}>
+                    <h2 style={{ color: scrollPalObj.color }}>
                       {author} <br />
                       <span>CEO OF {ceo}</span>
                     </h2>
@@ -176,7 +203,7 @@ const Pals = () => {
           </div>
         </div>
 
-        <div className="palsComp" style={{ background: color }} ref={palsCompCont}>
+        <div className="palsComp" style={{ background: scrollPalObj.color }} ref={palsCompCont}>
           <div className="palsCont" ref={palsLogo.current[0]}>
             <picture>
               <img src={poogle} alt="Poogle" />
