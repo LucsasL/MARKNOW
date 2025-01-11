@@ -4,7 +4,6 @@ import React, { useRef, useEffect, createContext } from "react";
 // Three.js Imports
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { useLoader } from "@react-three/fiber";
 
 // import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
@@ -14,7 +13,7 @@ const Reach = () => {
 
   const CanvasRef = createContext();
 
-  // Creating, Loading and Setting Three.js Environment 
+  // Creating, Loading and Setting Three.js 
   useEffect(() => {
     // Creating a Scene
     const scene = new THREE.Scene();
@@ -31,10 +30,6 @@ const Reach = () => {
       // Texture Loader
       const textureLoader = new THREE.TextureLoader();
       textureLoader.load("");
-
-      // Cube Texture
-      const cubeTextureLoader = new THREE.CubeTextureLoader();
-      cubeTextureLoader.setPath("../../../../canvas/cubeMap/");
 
       scene.add(mesh);
 
@@ -53,17 +48,6 @@ const Reach = () => {
       });
       renderer.setSize(window.innerWidth, 1000);
       renderer.setPixelRatio(maxPixelRatio);
-
-      const [bgCubeMap] = cubeTextureLoader.load([
-        "px.png",
-        "nx.png",
-        "py.png",
-        "ny.png",
-        "pz.png",
-        "nz.png",
-      ]);
-
-      scene.background = bgCubeMap;
 
       // Initializing OrbitControls
       const controls = new OrbitControls(camera, canvas.current);
